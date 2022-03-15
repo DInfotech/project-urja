@@ -160,6 +160,25 @@ const ResponsiveAppBar = () => {
                 </Button>
               ) : (
                 <>
+                  {/* <Box sx={{ minWidth: 120 }}>
+                    <FormControl fullWidth>
+                      <InputLabel id="demo-simple-select-label">
+                        {page.title}
+                      </InputLabel>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        label={page.title}
+                        key={page.title}
+                      >
+                        <MenuItem value={page.menu.subtitle}>
+                          <Typography textAlign="center">
+                            {page.menu.subtitle}
+                          </Typography>
+                        </MenuItem>
+                      </Select>
+                    </FormControl>
+                  </Box> */}
                   <Button
                     key={page.title}
                     sx={{ my: 2, color: "white", display: "block" }}
