@@ -1,0 +1,28 @@
+.banner {
+  background: var(--darkblue);
+
+}
+
+.banner-heading {
+  font-size: 45px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  padding: 55px 0;
+}
+
+.banner-heading::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 6px;
+  background: white;
+  position: absolute;
+  left: 0.2%;
+  top: 30%;
+  border-radius: 20px;
+}
+.banner-heading span {
+  color: var(--primarygreen);
+}
