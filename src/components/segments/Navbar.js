@@ -1,95 +1,169 @@
-import * as React from "react";
-import logo from "../../assets/logo.jpeg";
-import Header from "./Header";
-import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import { Link } from "@material-ui/core";
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { Link } from "react-scroll";
+import Sidebar from "../segments/Nav/Sidebar";
+import Backdrop from "../segments/Nav/Backdrop";
+import LogoIcon from "../../assets/logo.jpeg";
+import BurgerIcon from "../../assets/BurgerIcon";
 
-const styles = {
-  navbar: {
-    backgroundColor: "#fe7701",
-    color: "white",
-  },
-};
-const useStyles = makeStyles(styles);
+export default function TopNavbar() {
+  const [y, setY] = useState(window.scrollY);
+  const [sidebarOpen, toggleSidebar] = useState(false);
 
-const pages = [
-  {
-    title: "Home",
-    url: "/",
-  },
-  {
-    title: "About Us",
-    url: "/about",
-  },
-
-  {
-    title: "Products",
-    url: "/products",
-  },
-  {
-    title: "Investors",
-    url: "/investors",
-  },
-
-  {
-    title: "Electric Vehicles",
-    url: "/vehicles",
-  },
-  {
-    title: "Projects",
-    url: "/projects",
-  },
-  {
-    title: "Contact Us",
-    url: "/contact",
-  },
-];
-
-const ResponsiveAppBar = () => {
-  const classes = useStyles();
+  useEffect(() => {
+    window.addEventListener("scroll", () => setY(window.scrollY));
+    return () => {
+      window.removeEventListener("scroll", () => setY(window.scrollY));
+    };
+  }, [y]);
 
   return (
-    <AppBar position="static">
-      <Header />
-      <Container maxWidth="xl" className={classes.navbar}>
-        <Toolbar disableGutters>
-          <IconButton size="large">
-            <Avatar
-              alt="Urja Global"
-              src={logo}
-              variant="square"
-              sx={{ width: 56, height: 56 }}
-            />
-          </IconButton>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page.title}
-                sx={{ my: 2, color: "white", display: "block" }}
+    <>
+      <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
+      <Wrapper
+        className="flexCenter animate whiteBg"
+        style={y > 100 ? { height: "60px" } : { height: "80px" }}
+      >
+        <NavInner className="container flexSpaceCenter">
+          <Link className="pointer flexNullCenter" to="home" smooth={true}>
+            <LogoIcon />
+            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
+              fanatic
+            </h1>
+          </Link>
+          <BurderWrapper
+            className="pointer"
+            onClick={() => toggleSidebar(!sidebarOpen)}
+          >
+            <BurgerIcon />
+          </BurderWrapper>
+          <UlWrapper className="flexNullCenter">
+            <li className="semiBold font15 pointer">
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-80}
               >
-                <Link
-                  href={page.url}
-                  style={{
-                    textDecoration: "none",
-                    color: "white",
-                    fontWeight: "bold",
-                  }}
-                >
-                  {page.title}
-                </Link>
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+                Home
+              </Link>
+            </li>
+            <li className="semiBold font15 pointer">
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Services
+              </Link>
+            </li>
+            <li className="semiBold font15 pointer">
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Projects
+              </Link>
+            </li>
+            <li className="semiBold font15 pointer">
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="blog"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Blog
+              </Link>
+            </li>
+            <li className="semiBold font15 pointer">
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="pricing"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Pricing
+              </Link>
+            </li>
+            <li className="semiBold font15 pointer">
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Contact
+              </Link>
+            </li>
+          </UlWrapper>
+          <UlWrapperRight className="flexNullCenter">
+            <li className="semiBold font15 pointer">
+              <a href="/" style={{ padding: "10px 30px 10px 0" }}>
+                Log in
+              </a>
+            </li>
+            <li className="semiBold font15 pointer flexCenter">
+              <a
+                href="/"
+                className="radius8 lightBg"
+                style={{ padding: "10px 15px" }}
+              >
+                Get Started
+              </a>
+            </li>
+          </UlWrapperRight>
+        </NavInner>
+      </Wrapper>
+    </>
   );
-};
-export default ResponsiveAppBar;
+}
+
+const Wrapper = styled.nav`
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+`;
+const NavInner = styled.div`
+  position: relative;
+  height: 100%;
+`;
+const BurderWrapper = styled.button`
+  outline: none;
+  border: 0px;
+  background-color: transparent;
+  height: 100%;
+  padding: 0 15px;
+  display: none;
+  @media (max-width: 760px) {
+    display: block;
+  }
+`;
+const UlWrapper = styled.ul`
+  display: flex;
+  @media (max-width: 760px) {
+    display: none;
+  }
+`;
+const UlWrapperRight = styled.ul`
+  @media (max-width: 760px) {
+    display: none;
+  }
+`;

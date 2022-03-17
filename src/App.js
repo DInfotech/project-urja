@@ -10,13 +10,13 @@ function App() {
       path: "/",
       element: <Home />,
     },
-    { 
-      path: "/vehicles", 
-      element: <ElectricVehicles />
+    {
+      path: "/vehicles",
+      element: <ElectricVehicles />,
     },
-    { 
-      path: "/aboutus", 
-      element: <AboutUs />
+    {
+      path: "/about",
+      element: <AboutUs />,
     },
   ]);
   return routes;

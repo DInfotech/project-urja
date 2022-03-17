@@ -23,13 +23,14 @@ const ElectricVehicles = () => {
     <>
       <div style={{ display: "flex", justifyContent: "center", margin: 20 }}>
         <Typography variant="h4" align="center" style={{ color: "#fe7701" }}>
-          <u>Urja Global</u>
+          Urja Global
         </Typography>
         &nbsp;
         <Typography variant="h4" align="center" style={{ fontWeight: "bold" }}>
           Electric Vehicles
         </Typography>
       </div>
+      <hr width="80px" height="2px" color="#fe7701" />
       <div
         style={{
           display: "flex",
