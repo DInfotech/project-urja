@@ -1,6 +1,6 @@
 import { Button, Typography } from "@material-ui/core";
 
-const About = () => {
+const Home_About = () => {
   return (
     <div style={{ display: "flex", margin: 40 }}>
       <div style={{ display: "flex", flexDirection: "column", margin: 20 }}>
@@ -63,4 +63,4 @@ const About = () => {
     </div>
   );
 };
-export default About;
+export default Home_About;

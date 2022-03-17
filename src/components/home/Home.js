@@ -1,8 +1,8 @@
 import carousel1 from "../../assets/e-dream.jpg";
 import carousel2 from "../../assets/POSTER.jpg";
 import Carousel from "react-material-ui-carousel";
-import About from "../segments/home-page/About";
-import Product from "../segments/home-page/Product";
+import About from "./Home_About";
+import Product from "./Home_Product";
 
 const Home = () => {
   const items = [

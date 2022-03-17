@@ -31,7 +31,7 @@ const styles = {
 };
 const useStyles = makeStyles(styles);
 
-const Header = () => {
+const Nav_Header = () => {
   const classes = useStyles();
 
   return (
@@ -56,4 +56,4 @@ const Header = () => {
     </Toolbar>
   );
 };
-export default Header;
+export default Nav_Header;

@@ -1,7 +1,7 @@
-import product1 from "../../../assets/poster-2.jpg";
+import product1 from "../../assets/poster-2.jpg";
 import { Typography } from "@material-ui/core";
 
-const Product = () => {
+const Home_Product = () => {
   return (
     <div style={{ backgroundColor: "lightgrey" }}>
       <Typography
@@ -100,4 +100,4 @@ const Product = () => {
     </div>
   );
 };
-export default Product;
+export default Home_Product;

@@ -1,6 +1,6 @@
 import * as React from "react";
 import logo from "../../assets/logo.jpeg";
-import Header from "./Header";
+import Header from "./Nav_Header";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
