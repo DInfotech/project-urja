@@ -1,75 +1,74 @@
-.heading{
-    padding-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: capitalize;
-    color: var(--darkblue);
-    position: relative;
+.heading {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--darkblue);
+  position: relative;
 }
 
-.heading:after{
-    content: "";
-    display: block;
-    width: 360px;
-    height: 6px;
-    background: var(--primarygreen);
-    position: absolute;
-    /* left: 38%; */
-    top: 105%; 
-   
-    /* top: 0;  */
-    border-radius: 20px;
-    left: 50%;
-    transform: translate(-50%, -1px);
+.heading:after {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 6px;
+  background: var(--primarygreen);
+  position: absolute;
+  /* left: 38%; */
+  top: 105%;
+
+  /* top: 0;  */
+  border-radius: 20px;
+  left: 50%;
+  transform: translate(-50%, -1px);
 }
 
-.sub-heading{
-    color: var(--darkblue);
-    text-align: center;
-    font-weight: 600;
-    font-size: 18px;
-    margin: 2rem 0;
+.sub-heading {
+  color: var(--darkblue);
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 2rem 0;
 }
 
-.secondary-heading{
-color: var(--primarygreen);
-font-weight: 700;
-position: relative;
-padding-left: 1rem;
-margin-top: 1rem;
+.secondary-heading {
+  color: var(--primarygreen);
+  font-weight: 700;
+  position: relative;
+  padding-left: 1rem;
+  margin-top: 1rem;
 }
 
-.secondary-heading:before{
-    content: "";
-    display: block;
-    width: 4px;
-    height: 20px;
-    background: var(--primarygreen);
-    position: absolute;
-    left: .2%;
-    top: 20%;
-    border-radius: 20px;
-   
+.secondary-heading:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: var(--primarygreen);
+  position: absolute;
+  left: 0.2%;
+  top: 20%;
+  border-radius: 20px;
 }
 
-.max-width{
-    width: 85%;
-    margin: 0 auto;
+.max-width {
+  width: 85%;
+  margin: 0 auto;
 }
 
-.flex-img-content{
-    display: flex;
-    justify-content: space-between;
+.flex-img-content {
+  display: flex;
+  justify-content: space-between;
 }
 
-.paragraph-css{
-    text-align:justify;
-    margin-right: 2rem;
-    letter-spacing: .5px;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--grey);
-    line-height: 30px;
+.paragraph-css {
+  text-align: justify;
+  margin-right: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+  line-height: 30px;
 }

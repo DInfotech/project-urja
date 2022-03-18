@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <Carousel sx={{ height: "600px", width: "100%" }}>
-        {items.map((item, i) => (
+        {items.map((item) => (
           <img
             src={item.src}
             alt={item.name}

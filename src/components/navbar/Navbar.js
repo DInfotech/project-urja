@@ -1,5 +1,5 @@
 import * as React from "react";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/logo (8).png";
 import Header from "./Nav_Header";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@mui/material/AppBar";
@@ -10,11 +10,12 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import { Link } from "@material-ui/core";
+import "../../common_styles/commonClasses.css";
 
 const styles = {
   navbar: {
-    backgroundColor: "#fe7701",
-    color: "white",
+    backgroundColor: "var(--primarygreen)",
+    color: "var(--darkblue)",
   },
 };
 const useStyles = makeStyles(styles);
@@ -72,13 +73,13 @@ const ResponsiveAppBar = () => {
             {pages.map((page) => (
               <Button
                 key={page.title}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ margin: 2, color: "var(--darkblue)", display: "block" }}
               >
                 <Link
                   href={page.url}
                   style={{
                     textDecoration: "none",
-                    color: "white",
+                    color: "var(--darkblue)",
                     fontWeight: "bold",
                   }}
                 >

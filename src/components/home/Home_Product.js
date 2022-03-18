@@ -7,29 +7,30 @@ const Home_Product = () => {
       <Typography
         variant="h3"
         align="center"
+        className="heading"
         style={{
-          color: "#fe7701",
           margin: 5,
           padding: 5,
         }}
       >
-        <u>Products</u>
+        Products
       </Typography>
       <div style={{ display: "flex" }}>
         <div>
           <Typography
             variant="h5"
             align="center"
+            className="sub-heading"
             style={{
-              color: "#fe7701",
               margin: 5,
               padding: 5,
             }}
           >
-            <u>E-ZESS</u>
+            E-ZESS
           </Typography>
           <Typography
             align="center"
+            className="paragraph-css"
             style={{
               margin: 5,
               padding: 20,
@@ -66,16 +67,17 @@ const Home_Product = () => {
           <Typography
             variant="h5"
             align="center"
+            className="sub-heading"
             style={{
-              color: "#fe7701",
               margin: 5,
               padding: 5,
             }}
           >
-            <u>E-HEAVEN</u>
+            E-HEAVEN
           </Typography>
           <Typography
             align="center"
+            className="paragraph-css"
             style={{
               margin: 5,
               padding: 20,

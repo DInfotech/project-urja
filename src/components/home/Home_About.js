@@ -1,4 +1,5 @@
 import { Button, Typography } from "@material-ui/core";
+import "../../common_styles/commonClasses.css";
 
 const Home_About = () => {
   return (
@@ -7,16 +8,18 @@ const Home_About = () => {
         <Typography
           variant="h4"
           align="center"
-          style={{
-            color: "#fe7701",
-            margin: 5,
-            padding: 5,
-          }}
+          className="heading"
+          // style={{
+          //   color: "#fe7701",
+          //   margin: 5,
+          //   padding: 5,
+          // }}
         >
-          <u>Welcome to Urja Global Limited</u>
+          Welcome to Urja Global Limited
         </Typography>
         <Typography
           align="center"
+          className="paragraph-css"
           style={{
             margin: 5,
             padding: 5,
@@ -41,8 +44,8 @@ const Home_About = () => {
             style={{
               margin: 10,
               padding: 8,
-              backgroundColor: "#fe7701",
-              color: "white",
+              backgroundColor: "var(--primarygreen)",
+              color: "var(--darkblue)",
               width: "100px",
               borderRadius: 10,
             }}

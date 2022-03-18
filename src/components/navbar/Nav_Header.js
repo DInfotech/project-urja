@@ -8,7 +8,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 const styles = {
   header: {
-    color: "#fe7701",
+    color: "var(--primarygreen)",
     backgroundColor: "white",
     display: "flex",
     justifyContent: "center",
@@ -26,7 +26,7 @@ const styles = {
   text: {
     display: "flex",
     flexDirection: "column",
-    color: "black",
+    color: "var(--primarygreen)",
   },
 };
 const useStyles = makeStyles(styles);
@@ -36,7 +36,7 @@ const Nav_Header = () => {
 
   return (
     <Toolbar className={classes.header}>
-      <Typography align="center" fontWeight="bold">
+      <Typography align="center" fontWeight="bold" className="heading">
         CIN NO: L67120DL1992PLC048983 | GSTIN NO: 07AAACC0367M1ZN
       </Typography>
       <Box className={classes.box}>
