@@ -2,7 +2,7 @@
 import React from 'react'
 import Banner from '../common_components/banner/banner';
 import "./Aboutus.css";
-import AboutusContent from './Aboutuscontent';
+import AboutusContent from './AboutUsContent';
 const Aboutus = () => {
   return (
     <>
