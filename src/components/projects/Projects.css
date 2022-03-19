@@ -1,16 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-.profilecards {
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.projectcards {
     box-sizing: border-box;
   font-family: 'Lato', Arial, sans-serif;
   position: relative;
-  display: inline-block;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   margin: 10px;
-  height: 50px;
+  height: 150px;
   min-width: 250px;
-  max-width: 400px;
+  max-width: 550px;
   width: 100%;
   background-color: var(--darkblue);
   color: #2B2B2B;
@@ -22,11 +31,11 @@
 
 }
 
-.profilecards figcaption {
+.projectcards figcaption {
   padding: 5% 10% 15%;
 }
 
-.profilecards h3 {
+.projectcards h3 {
   font-family: 'Oswald';
   text-transform: uppercase;
   font-size: 20px;
@@ -36,7 +45,7 @@
   color: var(--primarygreen);
 }
 
-.profilecards h4 {
+.projectcards h4 {
     background-color: red;
   font-weight: 400;
   margin:1rem 0;
@@ -44,4 +53,5 @@
   color: white;
   letter-spacing: 1px;
 }
+
 
