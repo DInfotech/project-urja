@@ -30,7 +30,7 @@ const cardDirectorsDat = [
 
 const CardListItem = (props) => {
     return (
-        <div className="profilecards">
+        <div className="projectcards">
             <figcaption>
                 <h3>{props.cardDirector.name}</h3>
                 <h4>{props.cardDirector.place}</h4>
@@ -41,7 +41,7 @@ const CardListItem = (props) => {
 
 const ProjectContent = () => {
     return (
-        <div>
+        <div className='container'>
             {cardDirectorsDat.map((cardDirector) => {
                 return (
                     <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
@@ -51,3 +51,4 @@ const ProjectContent = () => {
     )
 }
 export default ProjectContent;
+
