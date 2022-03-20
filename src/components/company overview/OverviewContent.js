@@ -5,8 +5,8 @@ const OverviewContent = () => {
     return (
         <div className='content'>
             <div className='max-width'>
-                <Details/>
-                <div className='flex-img-content'>
+                <Details heading_title={"Overview"}/>
+                <div className='flex-horizontal'>
                     <p className='paragraph-css'>Our team comprises of seasoned professionals with a proven track record in design and integration of off grid and grid connected solar projects. We own one of the largest sales/installation networks PAN India backed by our team.
                         Urja Global Limited is promoted by the promoters group hailing from Rajasthan, India. With more than two decades of experience, they have established as one of the country’s leading industrial companies and a strong well-diversified conglomerate which is active in: Renewable Energy, IT&ITES, Tours & Travels, and Education & Training having presence across the globe.
                         <br />

@@ -10,7 +10,7 @@ const BoardDirectors = () => {
       <Banner banner_title={"Board of Director"}/>
       <div className='max-width'>
 
-      <Details/>
+      <Details heading_title={"BOARD OF DIRECTOR"}/>
 
       <BoardDirectorsContent/>
       </div>

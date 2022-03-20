@@ -1,5 +1,5 @@
-import React from 'react'
-import "./BoardDirectors.css"
+import React from 'react';
+import "./BoardDirectors.css";
 
 const cardDirectorsData = [
     {
@@ -68,5 +68,5 @@ const cardDirectorsData = [
   };
   
 
-// export default BoardDirectorsContent;
+
 export default CardList;

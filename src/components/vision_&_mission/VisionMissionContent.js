@@ -14,14 +14,14 @@ const imagestyle={
     return (
         <div className='content'>
             <div className='max-width'>
-               <Details/>
+               <Details heading_title={"Mission & Vision"}/>
 
-                <div className='flex-img-content'>
+                <div className='flex-horizontal'>
                     <img src='vision.jpg' alt='energy' style={imagestyle} />
                     <div >
                         <div className='secondary-heading'>
                             <h2>Vision</h2></div>
-                        <p className='paragraph-css'>  Our new vision is to implement URJA KENDRA in 2.48 Lakhs GRAM PANCHAYATS  across the geography, enlightening rural life and creating sources of livelihood wherein the villagers shall be trained on time & off time at Urja Incubation Centers and Government ITI’s.</p>
+                        <p className='paragraph-css'>  Our vision is to implement URJA KENDRA in 2.48 Lakhs GRAM PANCHAYATS  across the geography, enlightening rural life and creating sources of livelihood wherein the villagers shall be trained on time & off time at Urja Incubation Centers and Government ITI’s.</p>
 
                         <div className='secondary-heading'>
                             <h2>Mission</h2></div>

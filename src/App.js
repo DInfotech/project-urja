@@ -7,7 +7,9 @@ import Navbar from "./components/segments/Navbar";
 import VisionMission from "./components/vision_&_mission/VisionMission";
 import BoardDirectors from "./components/board directors/BoardDirectors";
 import ContactUs from "./components/contact us/ContactUs";
-
+import KeyManagerial from "./components/key_managerial/KeyManagerial";
+import SolarProjects from "./components/Solar Projects/SolarProjects";
+import Ceo from "./components/CEO/Ceo";
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
       <VisionMission/>
       <BoardDirectors/>
       <ContactUs/>
+      <KeyManagerial/>
+      <SolarProjects/>
+      <Ceo/>
     </div>
   );
 }
