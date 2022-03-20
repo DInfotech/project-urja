@@ -1,0 +1,35 @@
+.footer-bg{
+    background-color: rgb(252, 188, 165);
+    color:rgb(73, 72, 72);
+    text-align: justify;
+   
+}
+
+.footer-title{
+    margin: 2vw 0 1vw ;
+}
+
+.footer-content{
+font-size:14px;
+text-align: justify ;
+}
+
+ul li a{
+    text-decoration: none;
+    color:rgb(73, 72, 72);
+    
+}
+
+ul li a:hover{
+color:white;
+}
+
+.end-footer{
+background-color: rgb(252, 130, 86);
+padding: 1vw;
+text-align: center;
+}
+
+.social-icon{
+    margin-left:0.5rem ;
+}

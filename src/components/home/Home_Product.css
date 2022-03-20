@@ -1,0 +1,34 @@
+.pro-heading {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--darkblue);
+  position: relative;
+}
+
+.pro-heading:after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 6px;
+  background: var(--primarygreen);
+  position: absolute;
+  top: 93%;
+  border-radius: 20px;
+  left: 50%;
+  transform: translate(-50%, -1px);
+}
+
+.pro-paragraph-css {
+  text-align: justify;
+  margin-right: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+  line-height: 30px;
+  font-family: "Josefin Sans", sans-serif;
+}

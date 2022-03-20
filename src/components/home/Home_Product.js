@@ -1,16 +1,32 @@
 import product1 from "../../assets/poster-2.jpg";
 import { Typography } from "@material-ui/core";
+import "./Home_Product.css";
 
 const Home_Product = () => {
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
   return (
-    <div style={{ backgroundColor: "lightgrey" }}>
+    <div style={{ backgroundColor: "#31c36c17" }} className="reveal">
       <Typography
         variant="h3"
         align="center"
-        className="heading"
+        className="pro-heading"
         style={{
           margin: 5,
           padding: 5,
+          fontSize: 40,
         }}
       >
         Products
@@ -20,17 +36,17 @@ const Home_Product = () => {
           <Typography
             variant="h5"
             align="center"
-            className="sub-heading"
+            className="secondary-heading"
             style={{
               margin: 5,
               padding: 5,
             }}
           >
-            E-ZESS
+            <b>E-ZESS</b>
           </Typography>
-          <Typography
+          <p
             align="center"
-            className="paragraph-css"
+            className="pro-paragraph-css"
             style={{
               margin: 5,
               padding: 20,
@@ -49,7 +65,7 @@ const Home_Product = () => {
             error maiores velit. Facere tenetur aperiam amet. Placeat
             repellendus voluptatum praesentium, autem corporis iure quos
             assumenda animi?
-          </Typography>
+          </p>
         </div>
         <img
           src={product1}
@@ -67,17 +83,17 @@ const Home_Product = () => {
           <Typography
             variant="h5"
             align="center"
-            className="sub-heading"
+            className="secondary-heading"
             style={{
               margin: 5,
               padding: 5,
             }}
           >
-            E-HEAVEN
+            <b>E-HEAVEN</b>
           </Typography>
-          <Typography
+          <p
             align="center"
-            className="paragraph-css"
+            className="pro-paragraph-css"
             style={{
               margin: 5,
               padding: 20,
@@ -96,7 +112,7 @@ const Home_Product = () => {
             error maiores velit. Facere tenetur aperiam amet. Placeat
             repellendus voluptatum praesentium, autem corporis iure quos
             assumenda animi?
-          </Typography>
+          </p>
         </div>
       </div>
     </div>

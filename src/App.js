@@ -6,12 +6,13 @@ import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import ElectricVehicles from "./components/electric vehicles/ElectricVehicles";
 import AboutUs from "./components/about us/AboutUs";
-import VisionMission from "./components/vision_&_mission/VisionMission";
+// import VisionMission from "./components/vision_&_mission/VisionMission";
 import Projects from "./components/projects/Projects";
 import ContactUs from "./components/contact us/ContactUs";
-import BusinessPartner from "./components/business partner/business";
-import CompanyOverview from "./components/company overview/Overview";
-import BoardDirectors from "./components/board directors/BoardDirectors";
+import FooterPage from "./components/footer/FooterPage";
+// import BusinessPartner from "./components/business partner/business";
+// import CompanyOverview from "./components/company overview/Overview";
+// import BoardDirectors from "./components/board directors/BoardDirectors";
 function App() {
   let routes = useRoutes([
     {
@@ -43,10 +44,9 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
-      <BoardDirectors/>
+      <FooterPage />
     </Router>
   );
 };
 
 export default AppWrapper;
-

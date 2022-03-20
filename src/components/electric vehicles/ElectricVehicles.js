@@ -6,6 +6,8 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
+import "../../common_styles/commonClasses.css";
+import Banner from "../common_components/banner/banner";
 
 const ElectricVehicles = () => {
   const vehicles = [
@@ -15,21 +17,13 @@ const ElectricVehicles = () => {
     },
     {
       img: product2,
-      name: "Some Sample Name",
+      name: "E-HEAVEN",
     },
   ];
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center", margin: 20 }}>
-        <Typography variant="h4" align="center" style={{ color: "#fe7701" }}>
-          <u>Urja Global</u>
-        </Typography>
-        &nbsp;
-        <Typography variant="h4" align="center" style={{ fontWeight: "bold" }}>
-          Electric Vehicles
-        </Typography>
-      </div>
+      <Banner banner_title="Electric Vehicles" />
       <div
         style={{
           display: "flex",
@@ -62,6 +56,7 @@ const ElectricVehicles = () => {
                 variant="h4"
                 component="div"
                 align="center"
+                className="sub-heading"
               >
                 {vehicle.name}
               </Typography>
@@ -74,8 +69,8 @@ const ElectricVehicles = () => {
                 style={{
                   margin: 10,
                   padding: 8,
-                  backgroundColor: "#fe7701",
-                  color: "white",
+                  backgroundColor: "var(--primarygreen)",
+                  color: "var(--darkblue)",
                   width: "120px",
                   borderRadius: 10,
                 }}

@@ -42,15 +42,23 @@ const Nav_Header = () => {
       <Box className={classes.box}>
         <CallOutlinedIcon fontSize="large" sx={{ margin: 2 }} />
         <div className={classes.text}>
-          <Typography fontWeight="light">Toll-Free</Typography>
-          <Typography fontWeight="bold">8000-500-789</Typography>
+          <Typography fontWeight="light" className="sub-heading">
+            Toll-Free
+          </Typography>
+          <Typography fontWeight="bold" className="sub-heading">
+            8000-500-789
+          </Typography>
         </div>
       </Box>
       <Box className={classes.box}>
         <EmailOutlinedIcon fontSize="large" sx={{ margin: 2 }} />
         <div className={classes.text}>
-          <Typography fontWeight="light">Email</Typography>
-          <Typography fontWeight="bold">info@urjaglobal.in</Typography>
+          <Typography fontWeight="light" className="sub-heading">
+            Email
+          </Typography>
+          <Typography fontWeight="bold" className="sub-heading">
+            info@urjaglobal.in
+          </Typography>
         </div>
       </Box>
     </Toolbar>

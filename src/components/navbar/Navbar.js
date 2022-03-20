@@ -73,7 +73,11 @@ const ResponsiveAppBar = () => {
             {pages.map((page) => (
               <Button
                 key={page.title}
-                sx={{ margin: 2, color: "var(--darkblue)", display: "block" }}
+                sx={{
+                  margin: "4px",
+                  color: "var(--darkblue)",
+                  display: "block",
+                }}
               >
                 <Link
                   href={page.url}
@@ -81,6 +85,7 @@ const ResponsiveAppBar = () => {
                     textDecoration: "none",
                     color: "var(--darkblue)",
                     fontWeight: "bold",
+                    fontSize: "medium",
                   }}
                 >
                   {page.title}
