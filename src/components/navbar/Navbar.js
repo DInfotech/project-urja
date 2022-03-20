@@ -78,6 +78,7 @@ const ResponsiveAppBar = () => {
                   color: "var(--darkblue)",
                   display: "block",
                 }}
+                onClick={(e) => e.preventdefault()}
               >
                 <Link
                   href={page.url}
