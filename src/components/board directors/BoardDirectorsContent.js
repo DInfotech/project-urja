@@ -1,4 +1,6 @@
-import React from "react";
+
+import React from 'react';
+
 import "./BoardDirectors.css";
 
 const cardDirectorsData = [
@@ -73,5 +75,7 @@ const CardList = () => {
   );
 };
 
-// export default BoardDirectorsContent;
+
+
 export default CardList;
+

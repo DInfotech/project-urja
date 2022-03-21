@@ -54,11 +54,31 @@
   width: 85%;
   margin: 0 auto;
 }
+.flex-horizontal{
+    display: flex;
+    justify-content: space-between;
 
 .flex-img-content {
   display: flex;
   justify-content: space-between;
 }
+.flex-horizontal-spacearound{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.align-item{
+    display: flex;
+    align-items: center;
+}
+
 
 .paragraph-css {
   text-align: justify;

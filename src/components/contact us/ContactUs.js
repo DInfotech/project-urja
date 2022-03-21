@@ -1,9 +1,8 @@
-import React from "react";
-import Banner from "../common_components/banner/banner";
-import "./ContactUs.css";
-import ContactUsContent from "./ContactUsContent";
-// import ContactUsCardItem from './ContactUsContent';
-// import ContactUsCard from './ContactUsContent';
+import React from 'react'
+import Banner from '../common_components/banner/banner';
+import "./ContactUs.css"
+import ContactUsContent from './ContactUsContent';
+
 
 const ContactUs = () => {
   return (
