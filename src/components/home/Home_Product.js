@@ -1,32 +1,63 @@
-import product1 from "../../assets/poster-2.jpg";
+import ezess from "../../assets/poster-2.jpg";
+import elife from "../../assets/E-LIFE.jpeg";
+import charging from "../../assets/e-zess icons/charging.png";
+import color from "../../assets/e-zess icons/color.png";
+import range from "../../assets/e-zess icons/range.png";
+import speed from "../../assets/e-zess icons/speed.png";
+import balance from "../../assets/e-life icons/balance-protection.png";
+import overcharging from "../../assets/e-life icons/over-charging-protection.png";
+import overcurrent from "../../assets/e-life icons/over-current-protection.png";
+import overdischarge from "../../assets/e-life icons/over-discharge-protection.png";
+import shortcircuit from "../../assets/e-life icons/short-circuit-protection.png";
+import staticicon from "../../assets/e-life icons/static-protection.png";
+import temperature from "../../assets/e-life icons/temperature-protection.png";
 import { Typography } from "@material-ui/core";
 import "./Home_Product.css";
+import Button from "@mui/material/Button";
 
 const Home_Product = () => {
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
+  const features = [
+    {
+      name: "Over Charging Protection",
+      icon: overcharging,
+    },
+    {
+      name: "Over Current Protection",
+      icon: overcurrent,
+    },
+    {
+      name: "Over Discharge Protection",
+      icon: overdischarge,
+    },
+    {
+      name: "Short Circuit Protection",
+      icon: shortcircuit,
+    },
+    {
+      name: "Balance Protection",
+      icon: balance,
+    },
+    {
+      name: "Static Protection",
+      icon: staticicon,
+    },
+    {
+      name: "Temperature Protection",
+      icon: temperature,
+    },
+  ];
   return (
-    <div style={{ backgroundColor: "#31c36c17" }} className="reveal">
+    <div className="reveal">
       <Typography
         variant="h3"
         align="center"
-        className="pro-heading"
         style={{
           margin: 5,
-          padding: 5,
-          fontSize: 40,
+          padding: 10,
+          fontSize: 38,
+          color: "white",
+          backgroundColor: "#58aa97",
+          borderRadius: 12,
         }}
       >
         Products
@@ -40,44 +71,60 @@ const Home_Product = () => {
             style={{
               margin: 5,
               padding: 5,
+              paddingBottom: 0,
+              marginBottom: 0,
+              fontSize: "26px",
+              fontWeight: "bolder",
             }}
           >
-            <b>E-ZESS</b>
+            E-ZESS
           </Typography>
-          <p
-            align="center"
-            className="pro-paragraph-css"
-            style={{
-              margin: 5,
-              padding: 20,
-            }}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            maiores vitae temporibus accusamus dolore sequi libero cupiditate
-            esse ex, molestiae similique laboriosam, suscipit, perspiciatis
-            praesentium exercitationem eaque deserunt illo ut voluptates alias.
-            Recusandae nesciunt dolorum vitae! Beatae enim commodi, distinctio
-            fugiat id voluptates, molestiae accusantium eos, accusamus eius
-            exercitationem laborum modi? Nulla ipsa tempora error blanditiis hic
-            accusantium repudiandae architecto facilis fugit, sunt eos debitis
-            nesciunt veritatis nostrum rerum alias modi eum! Quisquam commodi
-            unde dolorum quam, dignissimos eveniet eaque, modi possimus iure
-            error maiores velit. Facere tenetur aperiam amet. Placeat
-            repellendus voluptatum praesentium, autem corporis iure quos
-            assumenda animi?
-          </p>
+          <div class="ezess-row">
+            <div class="col-6">
+              <div class="list-sec">
+                <img src={speed} alt="speed" />
+                <h6 class="mb-0">45 Kmps*</h6>
+                <p>Move it swift</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="list-sec">
+                <img src={range} alt="range" />
+                <h6 class="mb-0">
+                  <span>75-85 km*</span>
+                </h6>
+                <p>Goes a long way </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="list-sec">
+                <img src={color} alt="color" />
+                <h6 class="mb-0">5 Colours </h6>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="list-sec">
+                {" "}
+                <img src={charging} alt="charging" />
+                <h6 class="mb-0">
+                  <span>2-4 Hrs*</span>{" "}
+                </h6>
+                <p>Charging isn't tedious anymore </p>
+              </div>
+            </div>
+          </div>
         </div>
         <img
-          src={product1}
+          src={ezess}
           alt="E-zess"
-          style={{ height: 300, width: 4000, margin: 20 }}
+          style={{ height: 400, width: "50vw", margin: 30, borderRadius: 20 }}
         />
       </div>
       <div style={{ display: "flex" }}>
         <img
-          src={product1}
+          src={elife}
           alt="E-heaven"
-          style={{ height: 300, width: 4000, margin: 20 }}
+          style={{ height: 500, width: "50vw", margin: 30, borderRadius: 20 }}
         />
         <div>
           <Typography
@@ -87,33 +134,40 @@ const Home_Product = () => {
             style={{
               margin: 5,
               padding: 5,
+              paddingBottom: 0,
+              marginBottom: 0,
+              fontSize: "26px",
+              fontWeight: "bolder",
             }}
           >
-            <b>E-HEAVEN</b>
+            E-LIFE
           </Typography>
-          <p
-            align="center"
-            className="pro-paragraph-css"
-            style={{
-              margin: 5,
-              padding: 20,
-            }}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            maiores vitae temporibus accusamus dolore sequi libero cupiditate
-            esse ex, molestiae similique laboriosam, suscipit, perspiciatis
-            praesentium exercitationem eaque deserunt illo ut voluptates alias.
-            Recusandae nesciunt dolorum vitae! Beatae enim commodi, distinctio
-            fugiat id voluptates, molestiae accusantium eos, accusamus eius
-            exercitationem laborum modi? Nulla ipsa tempora error blanditiis hic
-            accusantium repudiandae architecto facilis fugit, sunt eos debitis
-            nesciunt veritatis nostrum rerum alias modi eum! Quisquam commodi
-            unde dolorum quam, dignissimos eveniet eaque, modi possimus iure
-            error maiores velit. Facere tenetur aperiam amet. Placeat
-            repellendus voluptatum praesentium, autem corporis iure quos
-            assumenda animi?
-          </p>
+          <div class="list">
+            {features.map((feature, i) => (
+              <div class="battery-sec" key={i}>
+                <img class="img" src={feature.icon} alt={i} />
+                <h6 class="feature-heading">{feature.name}</h6>
+              </div>
+            ))}
+          </div>
         </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Button
+          variant="contained"
+          size="medium"
+          align="center"
+          style={{
+            margin: 10,
+            padding: 10,
+            backgroundColor: "var(--primarygreen)",
+            color: "var(--darkblue)",
+            width: "150px",
+            borderRadius: 10,
+          }}
+        >
+          View More
+        </Button>
       </div>
     </div>
   );

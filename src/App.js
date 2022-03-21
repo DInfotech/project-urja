@@ -9,7 +9,7 @@ import AboutUs from "./components/about us/AboutUs";
 // import VisionMission from "./components/vision_&_mission/VisionMission";
 import Projects from "./components/projects/Projects";
 import ContactUs from "./components/contact us/ContactUs";
-import FooterPage from "./components/footer/FooterPage";
+import Footer from "./components/footer/Footer";
 // import BusinessPartner from "./components/business partner/business";
 // import CompanyOverview from "./components/company overview/Overview";
 // import BoardDirectors from "./components/board directors/BoardDirectors";
@@ -44,7 +44,7 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
-      <FooterPage />
+      <Footer />
     </Router>
   );
 };

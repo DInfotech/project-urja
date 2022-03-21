@@ -2,20 +2,6 @@ import { Button, Link, Typography } from "@material-ui/core";
 import "../../common_styles/commonClasses.css";
 
 const Home_About = () => {
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
   return (
     <div style={{ display: "flex", margin: 40 }} className="reveal">
       <div style={{ display: "flex", flexDirection: "column", margin: 20 }}>
@@ -38,7 +24,7 @@ const Home_About = () => {
         <div
           style={{
             display: "flex",
-            justifyContent: "flex-end",
+            justifyContent: "center",
             margin: 10,
           }}
         >
@@ -46,13 +32,12 @@ const Home_About = () => {
             <Button
               variant="contained"
               size="medium"
-              align="right"
               style={{
                 margin: 10,
-                padding: 8,
+                padding: 10,
                 backgroundColor: "var(--primarygreen)",
                 color: "var(--darkblue)",
-                width: "120px",
+                width: "150px",
                 borderRadius: 10,
               }}
             >
