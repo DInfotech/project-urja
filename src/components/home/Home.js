@@ -67,6 +67,7 @@ const Home = () => {
         alt="How to book your dream scooter"
         width="100%"
         style={{ marginTop: 10, backgroundColor: "#58aa97" }}
+        className="reveal"
       />
     </div>
   );
