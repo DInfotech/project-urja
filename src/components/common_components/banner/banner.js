@@ -6,7 +6,7 @@ const Banner =props => {
   return (
     <div className='banner'>
     <div className='max-width'>
-    <div className='banner-heading'>Company <span>{props.banner_title}</span></div>
+    <div className='banner-heading'><span>{props.banner_title}</span></div>
     {/* <div>
       <span>Home</span> / Company Overview
     </div> */}

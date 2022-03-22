@@ -10,6 +10,7 @@ import ContactUs from "./components/contact us/ContactUs";
 import KeyManagerial from "./components/key_managerial/KeyManagerial";
 import SolarProjects from "./components/Solar Projects/SolarProjects";
 import Ceo from "./components/CEO/Ceo";
+import Products from "./components/Products/Products";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <KeyManagerial/>
       <SolarProjects/>
       <Ceo/>
+      <Products/>
     </div>
   );
 }
