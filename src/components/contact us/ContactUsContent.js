@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "./ContactUs.css";
 import ContactUsCards from './ContactUsCards';
 import { FiPhone } from "react-icons/fi";
@@ -27,7 +27,16 @@ mail_icon:<FiMail/>,
 
 },
 ];
+
 const ContactUsContent = () => {
+  // const contactUsList= ContactUsDatas.map(ContactUsData=>
+  //     <ContactUsCards ContactUsData={ContactUsData}/>)
+  return (
+    <div className="max-width">
+      <div className="heading">Urja Global Limited Contact Us</div>
+      <div className="sub-heading">
+        One of India’s leading Renewable Energy developers.
+      </div>
 
     const ContactUsList= ContactUsDatas.map(ContactUsData=>
         <ContactUsCards ContactUsData={ContactUsData}/>)
@@ -50,5 +59,19 @@ const ContactUsContent = () => {
         </div>
     )
 }
+      <div>
+        <div className="secondary-heading" style={{ fontSize: "25px" }}>
+          Contact Us
+        </div>
+
+        <contactUsList />
+        {/* <div className='flex-img-content'>
+                    <div>hello</div>
+                    <div>world</div>
+                </div> */}
+      </div>
+    </div>
+  );
+};
 
 export default ContactUsContent;

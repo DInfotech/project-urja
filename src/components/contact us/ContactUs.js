@@ -7,12 +7,12 @@ import ContactUsContent from './ContactUsContent';
 const ContactUs = () => {
   return (
     <>
-        <Banner banner_title={"Contact Us"}/>
+      <Banner banner_title={"Contact Us"} />
       {/* <ContactUsCardItem/> */}
-      <ContactUsContent/>
-        {/* <ContactUsCard/> */}
+      <ContactUsContent />
+      {/* <ContactUsCard/> */}
     </>
-  )
-}
+  );
+};
 
 export default ContactUs;
