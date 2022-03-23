@@ -8,6 +8,8 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { Link } from "@material-ui/core";
 import "../../common_styles/commonClasses.css";
+import "./navbar.css";
+import { DropdownButton, Dropdown } from "react-bootstrap";
 
 const styles = {
   navbar: {
@@ -16,43 +18,6 @@ const styles = {
   },
 };
 const useStyles = makeStyles(styles);
-
-const pages = [
-  {
-    title: "Home",
-    url: "/",
-  },
-  {
-    title: "About Us",
-    url: "/about",
-  },
-
-  {
-    title: "Products",
-    url: "/products",
-  },
-  {
-    title: "Investors",
-    url: "/investors",
-  },
-
-  {
-    title: "Electric Vehicles",
-    url: "/vehicles",
-  },
-  {
-    title: "Projects",
-    url: "../SolarProjects",
-  },
-  {
-    title: "Gallery",
-    url: "/gallery",
-  },
-  {
-    title: "Contact Us",
-    url: "/contact",
-  },
-];
 
 const buttons = [
   {
@@ -84,28 +49,135 @@ const ResponsiveAppBar = () => {
               justifyContent: "flex-start",
             }}
           >
-            {pages.map((page) => (
-              <Button
-                key={page.title}
-                sx={{
-                  margin: "1px",
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/"
+                style={{
+                  textDecoration: "none",
                   color: "var(--darkblue)",
-                  display: "block",
+                  fontSize: "13px",
+                  fontWeight: 1000,
                 }}
               >
-                <Link
-                  href={page.url}
-                  style={{
-                    textDecoration: "none",
-                    color: "var(--darkblue)",
-                    fontSize: "13px",
-                    fontWeight: 1000,
-                  }}
-                >
-                  {page.title}
-                </Link>
-              </Button>
-            ))}
+                Home
+              </Link>
+            </Button>
+            <DropdownButton
+              variant="button"
+              title="About Us"
+              style={{ color: "var(--darkblue)" }}
+            >
+              <Dropdown.Item href="/about">About Us</Dropdown.Item>
+              <Dropdown.Item href="/company_overview">
+                Company Overview
+              </Dropdown.Item>
+              <Dropdown.Item href="/vision_mission">
+                Vision and Mission
+              </Dropdown.Item>
+              <Dropdown.Item href="/board_directors">
+                Board of Directos
+              </Dropdown.Item>
+              <Dropdown.Item href="/key_managerial">
+                Key Managerial Personnel
+              </Dropdown.Item>
+              <Dropdown.Item href="/business_partner">
+                Business Partners
+              </Dropdown.Item>
+            </DropdownButton>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "13px",
+                  fontWeight: 1000,
+                }}
+              >
+                Products
+              </Link>
+            </Button>
+            <DropdownButton variant="button" title="Investors">
+              <Dropdown.Item href="#">Announcements</Dropdown.Item>
+              <Dropdown.Item href="#">Right Issue</Dropdown.Item>
+              <Dropdown.Item href="#">
+                Notices of record date & BM
+              </Dropdown.Item>
+              <Dropdown.Item href="#">Financials</Dropdown.Item>
+              <Dropdown.Item href="#">Corporate Governance</Dropdown.Item>
+              <Dropdown.Item href="#">Share Holding Patterns</Dropdown.Item>
+              <Dropdown.Item href="#">Annual Report</Dropdown.Item>
+              <Dropdown.Item href="#">Contact Information</Dropdown.Item>
+            </DropdownButton>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "13px",
+                  fontWeight: 1000,
+                }}
+              >
+                Electric Vehicles
+              </Link>
+            </Button>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "13px",
+                  fontWeight: 1000,
+                }}
+              >
+                Projects
+              </Link>
+            </Button>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "13px",
+                  fontWeight: 1000,
+                }}
+              >
+                Contact Us
+              </Link>
+            </Button>
           </Box>
           <Box
             sx={{

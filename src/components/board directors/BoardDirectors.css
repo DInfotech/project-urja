@@ -2,27 +2,24 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 .profilecards {
-    box-sizing: border-box;
-  font-family: 'Lato', Arial, sans-serif;
+  box-sizing: border-box;
+  font-family: "Lato", Arial, sans-serif;
   position: relative;
   display: inline-block;
   overflow: hidden;
   margin: 10px;
-  height:34rem;
+  height: 34rem;
   min-width: 250px;
   max-width: 400px;
   width: 100%;
   background-color: var(--darkblue);
-  color: #2B2B2B;
+  color: #2b2b2b;
   text-align: center;
   font-size: 16px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   vertical-align: top;
   border-radius: 2rem;
-
 }
-
-
 
 .profilecards .profile-image {
   padding: 6% 10% 0;
@@ -36,16 +33,13 @@
   border-radius: 50%;
   max-width: 40%;
 }
-/* .profilecards .profile-image img:hover{
-    border: 3px solid #f4953b;
-    transform: scale(1);
-} */
+
 .profilecards figcaption {
   padding: 5% 8% 15%;
 }
 
 .profilecards h3 {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 400;
@@ -53,19 +47,18 @@
   margin: 3px 0;
   color: var(--primarygreen);
 }
-.profilecards p{
-    color: white;
-    font-size: 16px;
-    text-align: center;
+.profilecards p {
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
 
 .profilecards h4 {
   border-radius: 1rem;
-    background-color: red;
+  background-color: red;
   font-weight: 600;
-  margin:1rem 0;
+  margin: 1rem 0;
   text-transform: uppercase;
   color: white;
   letter-spacing: 2px;
 }
-

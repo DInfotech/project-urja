@@ -12,6 +12,12 @@ import Footer from "./components/footer/Footer";
 import Products from "./components/Products/Products";
 import SolarProjects from "./components/Solar Projects/SolarProjects";
 import Ceo from "./components/CEO/Ceo";
+import BoardDirectors from "./components/board directors/BoardDirectors";
+import BusinessPartner from "./components/business partner/BusinessPartner";
+import Overview from "./components/company overview/Overview";
+import VisionMission from "./components/vision_&_mission/VisionMission";
+import KeyManagerial from "./components/key_managerial/KeyManagerial";
+
 function App() {
   let routes = useRoutes([
     {
@@ -19,7 +25,7 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/vehicles",
+      path: "/electric_vehicles",
       element: <ElectricVehicles />,
     },
     {
@@ -34,6 +40,38 @@ function App() {
       path: "/contact",
       element: <ContactUs />,
     },
+    {
+      path: "/products",
+      element: <Products />,
+    },
+    {
+      path: "/solar_projects",
+      element: <SolarProjects />,
+    },
+    {
+      path: "/ceo",
+      element: <Ceo />,
+    },
+    {
+      path: "/board_directors",
+      element: <BoardDirectors />,
+    },
+    {
+      path: "/business_partner",
+      element: <BusinessPartner />,
+    },
+    {
+      path: "/company_overview",
+      element: <Overview />,
+    },
+    {
+      path: "/vision_mission",
+      element: <VisionMission />,
+    },
+    {
+      path: "/key_managerial",
+      element: <KeyManagerial />,
+    },
   ]);
   return routes;
 }
@@ -43,8 +81,6 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
-      <SolarProjects/>
-      <Ceo/>
       <Footer />
     </Router>
   );
