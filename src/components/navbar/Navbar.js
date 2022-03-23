@@ -71,6 +71,7 @@ const ResponsiveAppBar = () => {
             <DropdownButton
               variant="button"
               title="About Us"
+              bsstyle="custom"
               style={{ color: "var(--darkblue)" }}
             >
               <Dropdown.Item href="/about">About Us</Dropdown.Item>
@@ -98,7 +99,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               <Link
-                href="/"
+                href="/products"
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
@@ -129,7 +130,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               <Link
-                href="/"
+                href="/electric_vehicles"
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
@@ -148,7 +149,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               <Link
-                href="/"
+                href="/projects"
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
@@ -167,7 +168,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               <Link
-                href="/"
+                href="/contact"
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
