@@ -133,6 +133,7 @@
 
 .profilecards .profile-image {
   padding: 6% 10% 0;
+  margin-right: 0;
   /* transition: transform 1s ease, border 0.5s ease; */
 }
 
