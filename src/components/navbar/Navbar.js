@@ -42,7 +42,7 @@ const pages = [
   },
   {
     title: "Projects",
-    url: "/projects",
+    url: "../SolarProjects",
   },
   {
     title: "Gallery",

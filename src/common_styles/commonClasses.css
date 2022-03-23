@@ -101,3 +101,10 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+
+.general_cards_design{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

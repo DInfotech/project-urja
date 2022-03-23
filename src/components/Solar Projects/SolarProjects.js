@@ -10,7 +10,9 @@ const SolarProjects = () => {
         
         <div className='max-width'>
         <Details heading_title={" Solar Projects"}/>
+        <div className='general_cards_design'>
         <SolarProjectsContent/>
+        </div>
         </div>
     </>
   )
