@@ -9,7 +9,7 @@ import Button from "@mui/material/Button";
 import { Link } from "@material-ui/core";
 import "../../common_styles/commonClasses.css";
 import "./navbar.css";
-import { DropdownButton, Dropdown } from "react-bootstrap";
+import { NavDropdown } from "react-bootstrap";
 
 const styles = {
   navbar: {
@@ -61,36 +61,41 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "10px",
                   fontWeight: 1000,
                 }}
               >
                 Home
               </Link>
             </Button>
-            <DropdownButton
-              variant="button"
-              title="About Us"
-              bsstyle="custom"
-              style={{ color: "var(--darkblue)" }}
+            <NavDropdown
+              title="ABOUT US"
+              style={{
+                color: "var(--darkblue) !important",
+                fontWeight: 1000,
+                fontSize: "10px",
+                textDecoration: "none",
+                marginTop: 4,
+              }}
             >
-              <Dropdown.Item href="/about">About Us</Dropdown.Item>
-              <Dropdown.Item href="/company_overview">
+              <NavDropdown.Item href="/about">About Us</NavDropdown.Item>
+              <NavDropdown.Item href="/ceo">CEO</NavDropdown.Item>
+              <NavDropdown.Item href="/company_overview">
                 Company Overview
-              </Dropdown.Item>
-              <Dropdown.Item href="/vision_mission">
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/vision_mission">
                 Vision and Mission
-              </Dropdown.Item>
-              <Dropdown.Item href="/board_directors">
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/board_directors">
                 Board of Directos
-              </Dropdown.Item>
-              <Dropdown.Item href="/key_managerial">
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/key_managerial">
                 Key Managerial Personnel
-              </Dropdown.Item>
-              <Dropdown.Item href="/business_partner">
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/business_partner">
                 Business Partners
-              </Dropdown.Item>
-            </DropdownButton>
+              </NavDropdown.Item>
+            </NavDropdown>
             <Button
               sx={{
                 margin: "1px",
@@ -103,25 +108,36 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "10px",
                   fontWeight: 1000,
                 }}
               >
                 Products
               </Link>
             </Button>
-            <DropdownButton variant="button" title="Investors">
-              <Dropdown.Item href="#">Announcements</Dropdown.Item>
-              <Dropdown.Item href="#">Right Issue</Dropdown.Item>
-              <Dropdown.Item href="#">
+            <NavDropdown
+              title="INVESTORS"
+              style={{
+                color: "var(--darkblue) !important",
+                fontWeight: 1000,
+                fontSize: "10px",
+                textDecoration: "none",
+                marginTop: 4,
+              }}
+            >
+              <NavDropdown.Item href="#">Announcements</NavDropdown.Item>
+              <NavDropdown.Item href="#">Right Issue</NavDropdown.Item>
+              <NavDropdown.Item href="#">
                 Notices of record date & BM
-              </Dropdown.Item>
-              <Dropdown.Item href="#">Financials</Dropdown.Item>
-              <Dropdown.Item href="#">Corporate Governance</Dropdown.Item>
-              <Dropdown.Item href="#">Share Holding Patterns</Dropdown.Item>
-              <Dropdown.Item href="#">Annual Report</Dropdown.Item>
-              <Dropdown.Item href="#">Contact Information</Dropdown.Item>
-            </DropdownButton>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#">Financials</NavDropdown.Item>
+              <NavDropdown.Item href="#">Corporate Governance</NavDropdown.Item>
+              <NavDropdown.Item href="#">
+                Share Holding Patterns
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#">Annual Report</NavDropdown.Item>
+              <NavDropdown.Item href="#">Contact Information</NavDropdown.Item>
+            </NavDropdown>
             <Button
               sx={{
                 margin: "1px",
@@ -134,7 +150,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "10px",
                   fontWeight: 1000,
                 }}
               >
@@ -153,7 +169,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "10px",
                   fontWeight: 1000,
                 }}
               >
@@ -172,11 +188,30 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "10px",
                   fontWeight: 1000,
                 }}
               >
                 Contact Us
+              </Link>
+            </Button>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/solar_projects"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "10px",
+                  fontWeight: 1000,
+                }}
+              >
+                Solar Projects
               </Link>
             </Button>
           </Box>
