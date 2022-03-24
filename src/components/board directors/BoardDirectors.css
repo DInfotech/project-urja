@@ -8,7 +8,7 @@
   display: inline-block;
   overflow: hidden;
   margin: 10px;
-  height: 34rem;
+  height: 33rem;
   min-width: 250px;
   max-width: 400px;
   width: 100%;
@@ -31,16 +31,16 @@
   vertical-align: top;
   position: relative;
   border-radius: 50%;
-  max-width: 40%;
+  max-width: 35%;
 }
 
 .profilecards figcaption {
-  padding: 5% 8% 15%;
+  padding: 2% 8% 15%;
 }
 
 .profilecards h3 {
   font-family: "Oswald";
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -53,12 +53,14 @@
   text-align: center;
 }
 
+
 .profilecards h4 {
   border-radius: 1rem;
-  background-color: red;
+  background-color: white;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: .5rem 0;
   text-transform: uppercase;
-  color: white;
-  letter-spacing: 2px;
+  color: var(--primarygreen);
+  letter-spacing: 0px;
+  font-size: 1.3rem;
 }
