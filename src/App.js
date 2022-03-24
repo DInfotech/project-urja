@@ -9,6 +9,9 @@ import AboutUs from "./components/about us/AboutUs";
 import Projects from "./components/projects/Projects";
 import ContactUs from "./components/contact us/ContactUs";
 import Footer from "./components/footer/Footer";
+import BusinessPartner from "./components/business partner/business";
+import CompanyOverview from "./components/company overview/Overview";
+import BoardDirectors from "./components/board directors/BoardDirectors"
 function App() {
   let routes = useRoutes([
     {
@@ -40,6 +43,7 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
+      <BoardDirectors />
       <Footer />
     </Router>
   );

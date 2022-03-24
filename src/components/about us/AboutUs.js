@@ -5,10 +5,10 @@ import "./Aboutus.css";
 import AboutusContent from './AboutUsContent';
 const Aboutus = () => {
   return (
-    <>
-    <Banner banner_title="About Us"/>
-    <AboutusContent/>
-    </>
+    <div className='reveal'>
+      <Banner banner_title="About Us" />
+      <AboutusContent />
+    </div>
   );
 };
 
