@@ -1,0 +1,8 @@
+.custom_dropdown {
+  text-decoration: "none !important";
+  color: "var(--darkblue) !important";
+  font-size: "13px !important";
+  font-weight: 1000;
+  box-shadow: "none !important";
+  background: "var(--primarygreen) !important";
+}

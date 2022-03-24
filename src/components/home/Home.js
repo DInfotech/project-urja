@@ -3,7 +3,6 @@ import carousel2 from "../../assets/carousel/E - LIFE.png";
 import carousel3 from "../../assets/carousel/WEB_1.jpg";
 import carousel4 from "../../assets/carousel/LEO_1.jpg";
 import carousel5 from "../../assets/carousel/go green_1.jpg";
-import booking from "../../assets/booking.png";
 import Carousel from "react-material-ui-carousel";
 import About from "./Home_About";
 import Product from "./Home_Product";
@@ -62,13 +61,6 @@ const Home = () => {
       <About />
       <Product />
       <Features />
-      <img
-        src={booking}
-        alt="How to book your dream scooter"
-        width="100%"
-        style={{ marginTop: 10, backgroundColor: "#58aa97" }}
-        className="reveal"
-      />
     </div>
   );
 };

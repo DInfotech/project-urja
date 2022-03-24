@@ -95,9 +95,15 @@
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 2s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: 1s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.general_cards_design {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

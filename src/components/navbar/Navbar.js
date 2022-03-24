@@ -8,6 +8,8 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { Link } from "@material-ui/core";
 import "../../common_styles/commonClasses.css";
+import "./navbar.css";
+import { NavDropdown } from "react-bootstrap";
 
 const styles = {
   navbar: {
@@ -16,43 +18,6 @@ const styles = {
   },
 };
 const useStyles = makeStyles(styles);
-
-const pages = [
-  {
-    title: "Home",
-    url: "/",
-  },
-  {
-    title: "About Us",
-    url: "/about",
-  },
-
-  {
-    title: "Products",
-    url: "/products",
-  },
-  {
-    title: "Investors",
-    url: "/investors",
-  },
-
-  {
-    title: "Electric Vehicles",
-    url: "/vehicles",
-  },
-  {
-    title: "Projects",
-    url: "/projects",
-  },
-  {
-    title: "Gallery",
-    url: "/gallery",
-  },
-  {
-    title: "Contact Us",
-    url: "/contact",
-  },
-];
 
 const buttons = [
   {
@@ -84,28 +49,171 @@ const ResponsiveAppBar = () => {
               justifyContent: "flex-start",
             }}
           >
-            {pages.map((page) => (
-              <Button
-                key={page.title}
-                sx={{
-                  margin: "1px",
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/"
+                style={{
+                  textDecoration: "none",
                   color: "var(--darkblue)",
-                  display: "block",
+                  fontSize: "10px",
+                  fontWeight: 1000,
                 }}
               >
-                <Link
-                  href={page.url}
-                  style={{
-                    textDecoration: "none",
-                    color: "var(--darkblue)",
-                    fontSize: "13px",
-                    fontWeight: 1000,
-                  }}
-                >
-                  {page.title}
-                </Link>
-              </Button>
-            ))}
+                Home
+              </Link>
+            </Button>
+            <NavDropdown
+              title="ABOUT US"
+              style={{
+                color: "var(--darkblue) !important",
+                fontWeight: 1000,
+                fontSize: "10px",
+                textDecoration: "none",
+                marginTop: 4,
+              }}
+            >
+              <NavDropdown.Item href="/about">About Us</NavDropdown.Item>
+              <NavDropdown.Item href="/ceo">CEO</NavDropdown.Item>
+              <NavDropdown.Item href="/company_overview">
+                Company Overview
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/vision_mission">
+                Vision and Mission
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/board_directors">
+                Board of Directos
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/key_managerial">
+                Key Managerial Personnel
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/business_partner">
+                Business Partners
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/products"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "10px",
+                  fontWeight: 1000,
+                }}
+              >
+                Products
+              </Link>
+            </Button>
+            <NavDropdown
+              title="INVESTORS"
+              style={{
+                color: "var(--darkblue) !important",
+                fontWeight: 1000,
+                fontSize: "10px",
+                textDecoration: "none",
+                marginTop: 4,
+              }}
+            >
+              <NavDropdown.Item href="#">Announcements</NavDropdown.Item>
+              <NavDropdown.Item href="#">Right Issue</NavDropdown.Item>
+              <NavDropdown.Item href="#">
+                Notices of record date & BM
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#">Financials</NavDropdown.Item>
+              <NavDropdown.Item href="#">Corporate Governance</NavDropdown.Item>
+              <NavDropdown.Item href="#">
+                Share Holding Patterns
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#">Annual Report</NavDropdown.Item>
+              <NavDropdown.Item href="#">Contact Information</NavDropdown.Item>
+            </NavDropdown>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/electric_vehicles"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "10px",
+                  fontWeight: 1000,
+                }}
+              >
+                Electric Vehicles
+              </Link>
+            </Button>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/projects"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "10px",
+                  fontWeight: 1000,
+                }}
+              >
+                Projects
+              </Link>
+            </Button>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/contact"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "10px",
+                  fontWeight: 1000,
+                }}
+              >
+                Contact Us
+              </Link>
+            </Button>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/solar_projects"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "10px",
+                  fontWeight: 1000,
+                }}
+              >
+                Solar Projects
+              </Link>
+            </Button>
           </Box>
           <Box
             sx={{

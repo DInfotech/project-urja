@@ -14,12 +14,13 @@ const Ceo = () => {
 
                 {/* <BoardDirectorsContent/> */}
 
-                <div className="profilecards">
-                    <div className="profile-image"><img src="../profile.jpg" alt="profile-sample2" /></div>
-                    <figcaption>
-                        <h3>Gaurav Aggarwal</h3>
-                        <h4>CEO & Director</h4>
-                        <p>Has over 16 years of experience in Managing Business as a profit centre with the Telecom / Broadband / IT / Service industries. He has led the evolution & growth of CA TV & broadband services in North India. An effective leader with distinguished ability of building, leading & motivating large multicultural teams. Have represented organizations at many world forums.</p>
+                <div className="flex-horizontal profilecard">
+                    <div className="profile-image"><img src="../dummyceo.jpg" alt="profile-sample2" /></div>
+                    <figcaption >
+                        <h3  className='secondary-heading' style={{color:"var(--primarygreen)", fontWeight:'300'}}>Gaurav Aggarwal</h3>
+                        <h5>CEO & Director</h5>
+                        <p style={{paddingLeft:'0'}}>Has over 16 years of experience in Managing Business as a profit centre with the Telecom / Broadband / IT / Service industries. 
+                        He has led the evolution & growth of CA TV & broadband services in North India.<br/><br/> An effective leader with distinguished ability of building, leading & motivating large multicultural teams. Have represented organizations at many world forums.</p>
 
                     </figcaption>
                 </div>

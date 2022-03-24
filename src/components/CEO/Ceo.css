@@ -1,0 +1,13 @@
+.profilecard {
+  /* margin-top: 3rem;
+     margin-bottom: 2rem;  */
+  margin: 3rem 10%;
+  max-width: 70%;
+}
+
+.profile-image {
+  margin-right: 4rem;
+}
+.profile-image img {
+  width: 15rem;
+}

@@ -1,0 +1,59 @@
+
+.solarprojects_header{
+    height: 100vh;
+    background-color:var(--ghostwhite);
+    /* background-color:#F6F6F8; */
+    margin-bottom: 1rem;
+}
+
+.general_card{
+    width: 30rem;
+    padding: 17px;
+    background-color: white;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+ 
+
+.general_cards_design{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.solarproject_card_content{
+ text-align: start;
+ /* padding: 0 !important; */
+}
+
+.general_card_heading{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    /* line-height: 28px; */
+    color: var(--darkblue);
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+
+.general_card_subheading{
+    color: white;
+    /* color: var(--primarygreen); */
+   width: fit-content;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 6px 10px;
+    background-color: var(--primarygreen);
+    /* background-color: var(--darkblue); */
+    
+    border-radius: 12px;
+}
+
+.project_icons{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
