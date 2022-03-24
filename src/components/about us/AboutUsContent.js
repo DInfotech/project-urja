@@ -14,7 +14,7 @@ const AboutusContent = () => {
         <Details details_title="About Us" />
         <div>
           <div className="mainsection">
-            <div className="secondcontainer">
+            <div className="secondcontainer reveal active fade-bottom">
               <div className="scon">
                 <p className='paragraph-css'>
                   Our team comprises of seasoned professionals with a proven track
@@ -42,7 +42,7 @@ const AboutusContent = () => {
               <img src='vision.jpg' alt='energy' style={imagestyle} />
             </div>
           </div>
-          <div className="thirdcontainer">
+          <div className="thirdcontainer reveal fade-bottom">
           <img src='vision.jpg' alt='energy' style={imagestyle} />
           <div>
           <br />
@@ -65,7 +65,7 @@ const AboutusContent = () => {
             </p>
             </div>
           </div>
-          <div className="scont">
+          <div className="scont reveal fade-bottom">
             <iframe
               width="800"
               height="400"

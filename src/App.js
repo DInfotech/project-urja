@@ -9,14 +9,12 @@ import AboutUs from "./components/about us/AboutUs";
 import Projects from "./components/projects/Projects";
 import ContactUs from "./components/contact us/ContactUs";
 import Footer from "./components/footer/Footer";
-import BusinessPartner from "./components/business partner/business";
+import BusinessPartner from "./components/business partner/BusinessPartner";
 import CompanyOverview from "./components/company overview/Overview";
 import BoardDirectors from "./components/board directors/BoardDirectors"
 import Products from "./components/Products/Products";
 import SolarProjects from "./components/Solar Projects/SolarProjects";
 import Ceo from "./components/CEO/Ceo";
-import BoardDirectors from "./components/board directors/BoardDirectors";
-import BusinessPartner from "./components/business partner/BusinessPartner";
 import Overview from "./components/company overview/Overview";
 import VisionMission from "./components/vision_&_mission/VisionMission";
 import KeyManagerial from "./components/key_managerial/KeyManagerial";
@@ -84,7 +82,7 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
-      <BoardDirectors />
+      <AboutUs />
       <Footer />
     </Router>
   );

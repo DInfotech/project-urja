@@ -1,8 +1,8 @@
 import React from 'react';
-
+import "../../common_styles/commonClasses.css";
 const Details = (props) => {
   return (
-    <>
+    <div className='reveal'>
 
       <div className='heading'>Urja Global Limited {props.heading_title}</div>
 
@@ -11,7 +11,7 @@ const Details = (props) => {
 
 
 
-    </>
+    </div>
   )
 }
 
