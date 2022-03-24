@@ -95,7 +95,7 @@
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 2s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: 1s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .reveal.active {
   transform: translateY(0);
@@ -106,69 +106,4 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Oswald);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-.profilecards {
-  box-sizing: border-box;
-  font-family: "Lato", Arial, sans-serif;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin: 10px;
-  height: 34rem;
-  min-width: 250px;
-  max-width: 400px;
-  width: 100%;
-  background-color: var(--darkblue);
-  color: #2b2b2b;
-  text-align: center;
-  font-size: 16px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  vertical-align: top;
-  border-radius: 2rem;
-}
-
-.profilecards .profile-image {
-  padding: 6% 10% 0;
-  /* transition: transform 1s ease, border 0.5s ease; */
-}
-
-.profilecards .profile-image img {
-  max-width: 100%;
-  vertical-align: top;
-  position: relative;
-  border-radius: 50%;
-  max-width: 40%;
-}
-
-.profilecards figcaption {
-  padding: 5% 8% 15%;
-}
-
-.profilecards h3 {
-  font-family: "Oswald";
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 3px 0;
-  color: var(--primarygreen);
-}
-.profilecards p {
-  color: white;
-  font-size: 16px;
-  text-align: center;
-}
-
-.profilecards h4 {
-  border-radius: 1rem;
-  background-color: red;
-  font-weight: 600;
-  margin: 1rem 0;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 2px;
 }
