@@ -90,15 +90,15 @@ export default function App() {
                 }}
               >
                 <li>
-                  <a href="#!" className="text-white">
+                  <span className="text-white">
                     <MDBIcon fas icon="phone-alt" />
                     +91-11-25279143 | 45588275
-                  </a>
+                  </span>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <span className="text-white">
                     <MDBIcon far icon="envelope" /> info@urjaglobal.in
-                  </a>
+                  </span>
                 </li>
                 <li>
                   <span className="text-white">
@@ -108,10 +108,10 @@ export default function App() {
                   </span>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <span className="text-white">
                     <MDBIcon fas icon="phone-alt" />
                     Toll Free: 8000-500-789
-                  </a>
+                  </span>
                 </li>
               </ul>
             </MDBCol>
@@ -138,15 +138,15 @@ export default function App() {
                 }}
               >
                 <li>
-                  <a href="#!" className="text-white">
+                  <span className="text-white">
                     <MDBIcon fas icon="phone-alt" />
                     +91-11-25279143 | 45588275
-                  </a>
+                  </span>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <span className="text-white">
                     <MDBIcon far icon="envelope" /> info@urjaglobal.in
-                  </a>
+                  </span>
                 </li>
                 <li>
                   <span className="text-white">
@@ -156,17 +156,17 @@ export default function App() {
                   </span>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <span className="text-white">
                     <MDBIcon fas icon="map-marker-alt" />
                     Urja Incubation/Training Center: 487/63, 1st Floor, National
                     Market, Peeragarhi, New Delhi-87
-                  </a>
+                  </span>
                 </li>
               </ul>
             </MDBCol>
           </MDBRow>
         </section>
-        <section className="mb-4">
+        <section className="mt-4">
           <a
             className="btn btn-outline-light btn-floating m-1"
             href="https://www.facebook.com/urjagloballimited/"

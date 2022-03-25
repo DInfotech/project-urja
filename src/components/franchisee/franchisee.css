@@ -37,7 +37,6 @@
   display: flex;
 }
 .subfranchiseecards {
-  height: fit-content;
   padding: 17px;
   background-color: white;
   margin-bottom: 1.5rem;
