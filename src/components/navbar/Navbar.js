@@ -46,7 +46,8 @@ const ResponsiveAppBar = () => {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              justifyContent: "flex-start",
+              alignItems: "baseline",
+              justifyContent: "space-evenly",
             }}
           >
             <Button
@@ -61,7 +62,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "10px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -73,9 +74,8 @@ const ResponsiveAppBar = () => {
               style={{
                 color: "var(--darkblue) !important",
                 fontWeight: 1000,
-                fontSize: "10px",
+                fontSize: "13px",
                 textDecoration: "none",
-                marginTop: 4,
               }}
             >
               <NavDropdown.Item href="/about">About Us</NavDropdown.Item>
@@ -108,7 +108,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "10px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -120,9 +120,8 @@ const ResponsiveAppBar = () => {
               style={{
                 color: "var(--darkblue) !important",
                 fontWeight: 1000,
-                fontSize: "10px",
+                fontSize: "13px",
                 textDecoration: "none",
-                marginTop: 4,
               }}
             >
               <NavDropdown.Item href="#">Announcements</NavDropdown.Item>
@@ -150,7 +149,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "10px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -165,11 +164,11 @@ const ResponsiveAppBar = () => {
               }}
             >
               <Link
-                href="/projects"
+                href="/solar_projects"
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "10px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -188,30 +187,11 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "10px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
                 Contact Us
-              </Link>
-            </Button>
-            <Button
-              sx={{
-                margin: "1px",
-                color: "var(--darkblue)",
-                display: "block",
-              }}
-            >
-              <Link
-                href="/solar_projects"
-                style={{
-                  textDecoration: "none",
-                  color: "var(--darkblue)",
-                  fontSize: "10px",
-                  fontWeight: 1000,
-                }}
-              >
-                Solar Projects
               </Link>
             </Button>
           </Box>
@@ -219,7 +199,7 @@ const ResponsiveAppBar = () => {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              justifyContent: "flex-end",
+              justifyContent: "space-evenly",
             }}
           >
             {buttons.map((button) => (
@@ -239,7 +219,7 @@ const ResponsiveAppBar = () => {
                   style={{
                     textDecoration: "none",
                     color: "var(--darkblue)",
-                    fontSize: "small",
+                    fontSize: "13px",
                   }}
                 >
                   {button.title}
