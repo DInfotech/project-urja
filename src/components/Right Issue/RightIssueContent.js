@@ -9,6 +9,7 @@ const RightIssueContent = () => {
     const changeHandler = value => {
       setValue(value)
     }
+
   return (
     <>
          <div className='max-width-bg'>
@@ -49,4 +50,5 @@ I hereby declare that I am a resident of <Select options={options} placeholder={
     </>
   )
 }
+
 export default RightIssueContent;

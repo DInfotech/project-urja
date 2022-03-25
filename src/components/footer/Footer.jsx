@@ -12,56 +12,6 @@ export default function App() {
   return (
     <MDBFooter className="text-center" color="white" bgColor="dark">
       <MDBContainer className="p-4">
-        <section className="mb-4">
-          <a
-            className="btn btn-outline-light btn-floating m-1"
-            href="https://www.facebook.com/urjagloballimited/"
-            role="button"
-          >
-            <MDBIcon fab icon="facebook-f" />
-          </a>
-
-          <a
-            className="btn btn-outline-light btn-floating m-1"
-            href="https://twitter.com/urjaglobal"
-            role="button"
-          >
-            <MDBIcon fab icon="twitter" />
-          </a>
-
-          <a
-            className="btn btn-outline-light btn-floating m-1"
-            href="https://in.pinterest.com/urjaglobal01/"
-            role="button"
-          >
-            <MDBIcon fab icon="pinterest" />
-          </a>
-
-          <a
-            className="btn btn-outline-light btn-floating m-1"
-            href="https://www.instagram.com/urjaglobal/"
-            role="button"
-          >
-            <MDBIcon fab icon="instagram" />
-          </a>
-
-          <a
-            className="btn btn-outline-light btn-floating m-1"
-            href="https://www.linkedin.com/in/urjaglobal/"
-            role="button"
-          >
-            <MDBIcon fab icon="linkedin-in" />
-          </a>
-
-          <a
-            className="btn btn-outline-light btn-floating m-1"
-            href="https://www.youtube.com/channel/UCbny-GY-kQxznv8Qio4xXsw"
-            role="button"
-          >
-            <MDBIcon fab icon="youtube" />
-          </a>
-        </section>
-
         <section style={{ width: "100%" }}>
           <MDBRow style={{ justifyContent: "space-evenly" }}>
             <MDBCol
@@ -215,6 +165,55 @@ export default function App() {
               </ul>
             </MDBCol>
           </MDBRow>
+        </section>
+        <section className="mb-4">
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="https://www.facebook.com/urjagloballimited/"
+            role="button"
+          >
+            <MDBIcon fab icon="facebook-f" />
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="https://twitter.com/urjaglobal"
+            role="button"
+          >
+            <MDBIcon fab icon="twitter" />
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="https://in.pinterest.com/urjaglobal01/"
+            role="button"
+          >
+            <MDBIcon fab icon="pinterest" />
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/urjaglobal/"
+            role="button"
+          >
+            <MDBIcon fab icon="instagram" />
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="https://www.linkedin.com/in/urjaglobal/"
+            role="button"
+          >
+            <MDBIcon fab icon="linkedin-in" />
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="https://www.youtube.com/channel/UCbny-GY-kQxznv8Qio4xXsw"
+            role="button"
+          >
+            <MDBIcon fab icon="youtube" />
+          </a>
         </section>
       </MDBContainer>
 

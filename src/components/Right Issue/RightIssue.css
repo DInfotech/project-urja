@@ -2,6 +2,7 @@
     width: 12rem;
     border: 2px solid var(--darkblue) !important;
 }
+
 .sumbitbutton{
     border: none;
     background-color: var(--primarygreen);

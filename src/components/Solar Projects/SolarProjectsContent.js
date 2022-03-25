@@ -24,7 +24,7 @@
 //         <div className='solarprojects_header'>
 //         <div className='max-width' style={{backgroundColor:'var(--ghostwhite)', color:'white'}}>
 //         <Details heading_title={" Solar Projects"}/>
-        
+
 //         <div className='general_cards_design'>
 
 //         <SolarProjectsContent/>
@@ -83,14 +83,14 @@ const SolarProjectsData = [
 const SolarProjectsContent = (props) => {
   return (
     <>
-        <div className='general_card flex-horizontal'>
-          <div style={{width:"15%"}} className="project_icons"><FcFlashOn/></div>
-         <div className='flex-vertical solarproject_card_content' style={{width:"85%"}}>
+      <div className='general_card flex-horizontal reveal fade-left'>
+        <div style={{ width: "15%" }} className="project_icons"><FcFlashOn /></div>
+        <div className='flex-vertical solarproject_card_content' style={{ width: "85%" }}>
 
           <div className='general_card_heading'>{props.cardProject.name}</div>
           <div className='general_card_subheading'>{props.cardProject.location}</div>
-          </div>
-        
+        </div>
+
       </div>
     </>
   );
@@ -98,9 +98,23 @@ const SolarProjectsContent = (props) => {
 
 
 const SolarProjectsCardList = () => {
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
   return (
     <>
-    
+
       {SolarProjectsData.map(cardProject => {
         return <SolarProjectsContent cardProject={cardProject} key={cardProject.id} />;
       })}

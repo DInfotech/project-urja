@@ -2,6 +2,8 @@ import React from 'react'
 import './RightIssue.css';
 import RightIssueContent from './RightIssueContent';
 import Banner from '../common_components/banner/banner';
+
+
 const RightIssue = () => {
   return (
     <>
@@ -10,4 +12,5 @@ const RightIssue = () => {
     </>
   )
 }
+
 export default RightIssue;
