@@ -81,6 +81,26 @@ const SubCardListItem = (prop) => {
     );
 };
 
+const CardListItem = (prop) => {
+    return (
+        <div className="subfranchcards">
+            <figcaption>
+                <h3>
+                    Proprietor Name : {prop.cardDirector.name}
+                    <br />
+                    Firm Name : {prop.cardDirector.firmname}
+                    <br />
+                    Contact Details : {prop.cardDirector.contact}
+                    <br />
+                    Email Id : {prop.cardDirector.email}
+                    <br />
+                    Address : {prop.cardDirector.address}
+                </h3>
+            </figcaption>
+        </div>
+    );
+};
+
 const FranchiseeContent = () => {
     function reveal() {
         var reveals = document.querySelectorAll(".reveal");
@@ -113,7 +133,7 @@ const FranchiseeContent = () => {
                 <div className='reveal fade-left'>
                     {franchiseedat.map((cardDirector) => {
                         return (
-                            <SubCardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                            <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
                         );
                     })}
                 </div>
@@ -123,7 +143,7 @@ const FranchiseeContent = () => {
                 <div className='reveal fade-left'>
                     {franchiseeda.map((cardDirector) => {
                         return (
-                            <SubCardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                            <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
                         );
                     })}
                 </div>
@@ -133,7 +153,7 @@ const FranchiseeContent = () => {
                 <div className='reveal fade-left'>
                     {franchiseed.map((cardDirector) => {
                         return (
-                            <SubCardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                            <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
                         );
                     })}
                 </div>
