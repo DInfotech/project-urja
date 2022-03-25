@@ -1,0 +1,21 @@
+.css-1s2u09g-control{
+    width: 12rem;
+    border: 2px solid var(--darkblue) !important;
+}
+.sumbitbutton{
+    border: none;
+    background-color: var(--primarygreen);
+    color: white;
+    padding: 2px 20px;
+    margin-top: 1rem;
+    
+}
+
+.heading2{
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 2rem 0;
+}
