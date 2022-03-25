@@ -51,10 +51,12 @@
 }
 
 .businesscards h4 {
-  background-color: red;
-  font-weight: 400;
-  margin: 1rem 0;
+  border-radius: 1rem;
+  background-color: white;
+  font-weight: 600;
+  margin: .5rem 0;
   text-transform: uppercase;
-  color: white;
-  letter-spacing: 1px;
+  color: var(--primarygreen);
+  letter-spacing: 0px;
+  font-size: 1.3rem;
 }

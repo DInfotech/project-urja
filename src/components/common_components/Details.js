@@ -2,7 +2,7 @@ import React from "react";
 import "../../common_styles/commonClasses.css";
 const Details = (props) => {
   return (
-    <div>
+    <div className="reveal fade-bottom">
       <div className="heading">Urja Global Limited {props.heading_title}</div>
 
       <div className="sub-heading">

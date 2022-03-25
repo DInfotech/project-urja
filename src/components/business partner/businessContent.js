@@ -32,30 +32,32 @@ const BusinessContent = () => {
 
 
     return (
-        <div className='content'>
+        <div className='content reveal fade-bottom'>
             {cardDirectorsDa.map((cardDirector) => {
                 return (
                     <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
                 );
             })}
-            <div>
-                <div className='med-heading'>
-                    <h2>Core focus area:</h2>
-                </div>
-            </div>
-            <div className='flex-img-cont'>
-                <img src='vision.jpg' alt='energy' style={imagestyle} />
+            <div className='reveal fade-left'>
                 <div>
-                    <div className='secondary-heading'>
-                        <h2>Solar Consultants</h2>
+                    <div className='med-heading reveal fade-left'>
+                        <h2>Core focus area:</h2>
                     </div>
-                    <p className='paragraph-css'> Consulting in digital and enterprise transformation services.</p>
+                </div>
+                <div className='flex-img-cont'>
+                    <img src='vision.jpg' alt='energy' style={imagestyle} className='reveal fade-left'/>
+                    <div className='reveal fade-right'>
+                        <div className='secondary-heading'>
+                            <h2>Solar Consultants</h2>
+                        </div>
+                        <p className='paragraph-css'> Consulting in digital and enterprise transformation services.</p>
 
-                    <div className='secondary-heading'>
-                        <h2>IT Consultant</h2>
+                        <div className='secondary-heading'>
+                            <h2>IT Consultant</h2>
+                        </div>
+                        <p className='paragraph-css'> Consulting in digital and enterprise transformation services.</p>
+
                     </div>
-                    <p className='paragraph-css'> Consulting in digital and enterprise transformation services.</p>
-
                 </div>
             </div>
         </div>

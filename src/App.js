@@ -18,6 +18,7 @@ import Ceo from "./components/CEO/Ceo";
 import Overview from "./components/company overview/Overview";
 import VisionMission from "./components/vision_&_mission/VisionMission";
 import KeyManagerial from "./components/key_managerial/KeyManagerial";
+import Franchisee from "./components/franchisee/franchisee";
 
 function App() {
   let routes = useRoutes([
@@ -82,7 +83,6 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
-      <AboutUs />
       <Footer />
     </Router>
   );
