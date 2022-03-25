@@ -60,7 +60,7 @@ p{
 .scont{
     width:100%;
     align-items: center;
-    margin-left: 170px;
+    margin-left: 230px;
     margin-right: 50px;
     margin-top: 20px;
 }
@@ -89,4 +89,34 @@ p{
   }
   .active.fade-right {
     animation: fade-right 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }

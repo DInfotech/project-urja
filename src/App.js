@@ -6,7 +6,6 @@ import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import ElectricVehicles from "./components/electric vehicles/ElectricVehicles";
 import AboutUs from "./components/about us/AboutUs";
-import Projects from "./components/projects/Projects";
 import ContactUs from "./components/contact us/ContactUs";
 import Footer from "./components/footer/Footer";
 import BusinessPartner from "./components/business partner/BusinessPartner";
@@ -18,6 +17,7 @@ import Ceo from "./components/CEO/Ceo";
 import Overview from "./components/company overview/Overview";
 import VisionMission from "./components/vision_&_mission/VisionMission";
 import KeyManagerial from "./components/key_managerial/KeyManagerial";
+import Franchisee from "./components/franchisee/franchisee";
 
 function App() {
   let routes = useRoutes([
@@ -32,10 +32,6 @@ function App() {
     {
       path: "/about",
       element: <AboutUs />,
-    },
-    {
-      path: "/projects",
-      element: <Projects />,
     },
     {
       path: "/contact",
@@ -82,7 +78,6 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
-      <AboutUs />
       <Footer />
     </Router>
   );

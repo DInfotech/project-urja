@@ -101,6 +101,9 @@
   transform: translateY(0);
   opacity: 1;
 }
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
 
 .general_cards_design {
   display: flex;

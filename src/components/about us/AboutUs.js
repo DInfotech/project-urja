@@ -7,7 +7,7 @@ import AboutusContent from './AboutUsContent';
 const Aboutus = () => {
   return (
     <div>
-      <Banner banner_title="About Us" />
+      <Banner/>
       <AboutusContent />
     </div>
   );

@@ -8,7 +8,7 @@ const BusinessPartner = () => {
     <>
       <Banner banner_title="Business Partner" />
       <div className="max-width">
-        <Details details_title="Business Partner" />
+        <Details heading_title="Business Partner" />
         <BusinessContent />
       </div>
     </>
