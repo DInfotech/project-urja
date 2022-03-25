@@ -50,7 +50,7 @@ export default function App() {
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <a href="/terms&conditions" className="text-white">
                     Terms & Conditions
                   </a>
                 </li>
