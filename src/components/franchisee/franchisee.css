@@ -5,7 +5,9 @@
   box-sizing: border-box;
   font-family: "Lato", Arial, sans-serif;
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
   margin: 10px;
   height: 24rem;
@@ -21,7 +23,7 @@
 }
 
 .franchiseecards h3 {
-    font-family: "Oswald";
+  font-family: "Oswald";
   font-size: 30px;
   font-weight: 400;
   line-height: 24px;
@@ -31,33 +33,22 @@
   padding-bottom: 20px;
 }
 
-.sub{
-    display: flex;
+.sub {
+  display: flex;
 }
 .subfranchiseecards {
-    width: 30rem;
-    padding: 17px;
-    background-color: white;
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    color: black;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 40px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  
-.subfranchiseecards h3 {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    color: var(--darkblue);
-    margin-bottom: 0px;
-    padding-bottom: 5px;
-    text-align: justify;
+  padding: 17px;
+  background-color: white;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  color: black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .subfranchcards {

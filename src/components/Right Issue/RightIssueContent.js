@@ -1,12 +1,8 @@
 import React, { useState, useMemo } from 'react'
 import Select from 'react-select';
+import './RightIssue.css';
 import countryList from 'react-select-country-list';
-
-
-
 const RightIssueContent = () => {
-
-
     const [value, setValue] = useState('')
     const options = useMemo(() => countryList().getData(), [])
   
@@ -29,10 +25,8 @@ const RightIssueContent = () => {
 The following disclaimer applies to the documents of Urja Global Limited (the “Company”, and such documents, the “Documents” and each, a “Document”) hosted on this website in connection with the Company’s issue of equity shares on a rights basis (the “Issue” and the “Rights Equity Shares”, respectively). The Documents have been made available on this website in electronic form solely to comply with the provisions of the Securities and Exchange Board of India (Issue of Capital and Disclosure Requirements) Regulations, 2018, as amended. You are advised to read this disclaimer carefully before reading, accessing or making any other use of the Documents. By accessing the Documents, you agree to follow the following terms and conditions, including any modifications to them from time to time. References to the Company herein include its subsidiaries, affiliates, and joint venture, as applicable, which are consolidated in its accounts.
             </div>
          
-
-
             <div>
-              <div className='general_card_heading'>Nothing Herein Constitutes An Offer Of Securities For Sale In Any Jurisdiction Where It Is Unlawful To Do So.</div>
+              <div className='general_card_heading' style={{marginTop:'1rem'}}>Nothing Herein Constitutes An Offer Of Securities For Sale In Any Jurisdiction Where It Is Unlawful To Do So.</div>
               <div className='tc_subdata'>
               The contents of the Documents are for your information only. No part of the contents herein shall be copied or duplicated in any form by any means or redistributed. Neither the Company, nor any of its representatives or agents are soliciting any action based on any of the information contained on this website, including the Documents, and such information should not be construed as an offer, or invitation or offer to sell or the solicitation of any offer to buy or subscribe for or purchase any security. Neither the Company, nor any of its representatives or agents represents that the contents of the Documents are accurate or complete. The information contained in the Documents may not be updated since its original publication date and may not reflect the latest updates.
 <br/><br/>
