@@ -20,6 +20,8 @@ import RightIssue from "./components/Right Issue/RightIssue";
 
 import TermsConditions from "./components/Terms Conditions/TermsConditions";
 import Franchisee from "./components/franchisee/franchisee";
+import Faq from "./components/FAQ/Faq";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   let routes = useRoutes([

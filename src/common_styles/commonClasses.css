@@ -75,6 +75,11 @@
   padding: 5px;
 }
 
+.center-item{
+  text-align: center;
+
+}
+
 .align-item {
   display: flex;
   align-items: center;
@@ -109,4 +114,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.common-heading{
+  font-weight: 600;
+  font-size: 3rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-family: "Bitter", serif;
+  text-transform: capitalize;
+  word-spacing: 5px;
+  margin-bottom: 50px;
+  color: var(--darkblue);
 }
