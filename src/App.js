@@ -78,7 +78,7 @@ function App() {
       element: <Franchisee />,
     },
     {
-      path: "/firstcall",
+      path: "/rightissue",
       element: <RightIssue />,
     },
     {

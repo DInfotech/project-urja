@@ -4,7 +4,7 @@ import feature2 from "../../assets/features/2.png";
 import feature3 from "../../assets/features/3.png";
 import feature4 from "../../assets/features/4.png";
 
-const Home_Features = () => {
+const Features = () => {
   return (
     <div style={{ marginTop: 20 }} className="reveal">
       <Typography
@@ -53,4 +53,4 @@ const Home_Features = () => {
   );
 };
 
-export default Home_Features;
+export default Features;

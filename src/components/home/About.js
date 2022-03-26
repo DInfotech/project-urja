@@ -1,7 +1,7 @@
 import { Button, Link, Typography } from "@material-ui/core";
 import "../../common_styles/commonClasses.css";
 
-const Home_About = () => {
+const About = () => {
   return (
     <div
       style={{ display: "flex", flexDirection: "column", margin: "40px 0px" }}
@@ -75,4 +75,4 @@ const Home_About = () => {
     </div>
   );
 };
-export default Home_About;
+export default About;
