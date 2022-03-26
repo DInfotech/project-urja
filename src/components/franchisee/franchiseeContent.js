@@ -84,76 +84,84 @@ const SubCardListItem = (prop) => {
   );
 };
 
-const FranchiseeContent = () => {
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
-  return (
-    <>
-      <div className="franchiseecards reveal fade-bottom">
-        <h3>Rajasthan</h3>
-        <div className="sub reveal fade-left">
-          {franchiseedata.map((cardDirector) => {
-            return (
-              <SubCardListItem
-                cardDirector={cardDirector}
-                key={cardDirector.id}
-              />
-            );
-          })}
+const CardListItem = (prop) => {
+    return (
+        <div className="subfranchcards">
+            <figcaption>
+                <h3>
+                    Proprietor Name : {prop.cardDirector.name}
+                    <br />
+                    Firm Name : {prop.cardDirector.firmname}
+                    <br />
+                    Contact Details : {prop.cardDirector.contact}
+                    <br />
+                    Email Id : {prop.cardDirector.email}
+                    <br />
+                    Address : {prop.cardDirector.address}
+                </h3>
+            </figcaption>
         </div>
-      </div>
-      <div className="franchiseecards reveal fade-bottom">
-        <h3>Maharashtra</h3>
-        <div className="reveal fade-left">
-          {franchiseedat.map((cardDirector) => {
-            return (
-              <SubCardListItem
-                cardDirector={cardDirector}
-                key={cardDirector.id}
-              />
-            );
-          })}
-        </div>
-      </div>
-      <div className="franchiseecards reveal fade-bottom">
-        <h3>Gujrat</h3>
-        <div className="reveal fade-left">
-          {franchiseeda.map((cardDirector) => {
-            return (
-              <SubCardListItem
-                cardDirector={cardDirector}
-                key={cardDirector.id}
-              />
-            );
-          })}
-        </div>
-      </div>
-      <div className="franchiseecards reveal fade-bottom">
-        <h3>Ghaziabad</h3>
-        <div className="reveal fade-left">
-          {franchiseed.map((cardDirector) => {
-            return (
-              <SubCardListItem
-                cardDirector={cardDirector}
-                key={cardDirector.id}
-              />
-            );
-          })}
-        </div>
-      </div>
-    </>
-  );
+    );
 };
+
+const FranchiseeContent = () => {
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", reveal);
+    return (
+        <>
+            <div className='franchiseecards reveal fade-bottom'>
+                <h3>Rajasthan</h3>
+                <div className='sub reveal fade-left'>
+                    {franchiseedata.map((cardDirector) => {
+                        return (
+                            <SubCardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                        );
+                    })}
+                </div>
+            </div>
+            <div className='franchiseecards reveal fade-bottom'>
+                <h3>Maharashtra</h3>
+                <div className='reveal fade-left'>
+                    {franchiseedat.map((cardDirector) => {
+                        return (
+                            <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                        );
+                    })}
+                </div>
+            </div>
+            <div className='franchiseecards reveal fade-bottom'>
+                <h3>Gujrat</h3>
+                <div className='reveal fade-left'>
+                    {franchiseeda.map((cardDirector) => {
+                        return (
+                            <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                        );
+                    })}
+                </div>
+            </div>
+            <div className='franchiseecards reveal fade-bottom'>
+                <h3>Ghaziabad</h3>
+                <div className='reveal fade-left'>
+                    {franchiseed.map((cardDirector) => {
+                        return (
+                            <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                        );
+                    })}
+                </div>
+            </div>
+        </>
+    )
+}
 export default FranchiseeContent;
