@@ -50,20 +50,24 @@ const OurProducts = () => {
   ];
   return (
     <div className="reveal">
-      <Typography
-        variant="h3"
-        align="center"
-        style={{
-          margin: 5,
-          padding: 10,
-          fontSize: 38,
-          color: "white",
-          backgroundColor: "#58aa97",
-          borderRadius: 12,
-        }}
-      >
-        Products
-      </Typography>
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <Typography
+          variant="h3"
+          align="center"
+          style={{
+            margin: 5,
+            padding: 10,
+            fontSize: 38,
+            color: "white",
+            backgroundColor: "#58aa97",
+            borderRadius: "0px 30px",
+            boxShadow: "grey 15px 15px 8px",
+            width: "50%",
+          }}
+        >
+          Our Products
+        </Typography>
+      </div>
       <div style={{ display: "flex" }}>
         <div>
           <Typography

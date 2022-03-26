@@ -16,7 +16,9 @@ const About = () => {
           fontSize: 38,
           color: "white",
           backgroundColor: "#58aa97",
-          borderRadius: 12,
+          borderRadius: "0px 30px",
+          boxShadow: "grey 15px 15px 8px",
+          width: "50%",
         }}
       >
         Welcome to Urja Global Limited
@@ -36,13 +38,32 @@ const About = () => {
           total Solar Solutions and is known for Design, Supply, Distribution
           and Comprehensive approach of delivering Standalone Solar Products...
         </Typography>
+      </div>
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <iframe
+          width="50%"
+          height={315}
+          src="https://www.youtube.com/embed/0XOe0ZxwXCg"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
-            margin: 10,
+            alignItems: "center",
           }}
         >
+          <Typography
+            variant="h6"
+            className="paragraph-css"
+            style={{ margin: "20px", fontSize: 25 }}
+          >
+            <b>Let us do it right now…</b>
+          </Typography>
           <Link href="/about" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
@@ -60,17 +81,6 @@ const About = () => {
             </Button>
           </Link>
         </div>
-      </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <iframe
-          width="50%"
-          height="315"
-          src="https://www.youtube.com/embed/0XOe0ZxwXCg"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
       </div>
     </div>
   );

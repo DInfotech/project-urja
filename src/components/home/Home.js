@@ -2,7 +2,6 @@ import carousel1 from "../../assets/carousel/urja.jpeg";
 import carousel2 from "../../assets/carousel/WEB_1.jpg";
 import carousel3 from "../../assets/carousel/LEO_1.jpg";
 import Carousel from "react-material-ui-carousel";
-import booking from "../../assets/booking.png";
 import About from "./About";
 import Product from "./OurProducts";
 import Features from "./Features";
@@ -53,15 +52,8 @@ const Home = () => {
       </Carousel>
       <About />
       <Product />
-      <Features />
       <CompanyStats />
-      <img
-        src={booking}
-        alt="How to book your dream scooter"
-        width="100%"
-        style={{ marginTop: 10, backgroundColor: "#58aa97" }}
-        className="reveal"
-      />
+      <Features />
       <EnquiryForm />
     </div>
   );
