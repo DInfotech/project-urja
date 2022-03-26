@@ -75,6 +75,14 @@ function App() {
       path: "/franchisee",
       element: <Franchisee />,
     },
+    {
+      path: "/firstcall",
+      element: <RightIssue />,
+    },
+    {
+      path: "/terms&conditions",
+      element: <TermsConditions />,
+    },
   ]);
   return routes;
 }
@@ -85,7 +93,6 @@ const AppWrapper = () => {
       <Navbar />
       <App />
       <Footer />
-
     </Router>
   );
 };

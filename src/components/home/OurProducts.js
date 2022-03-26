@@ -1,7 +1,8 @@
 import ezess from "../../assets/poster-2.jpg";
-import elife from "../../assets/E-LIFE.jpeg";
+import elife from "../../assets/E-LIFE.png";
 import charging from "../../assets/e-zess icons/charging.png";
 import color from "../../assets/e-zess icons/color.png";
+import colors from "../../assets/e-zess icons/Colors.png";
 import range from "../../assets/e-zess icons/range.png";
 import speed from "../../assets/e-zess icons/speed.png";
 import balance from "../../assets/e-life icons/balance-protection.png";
@@ -12,10 +13,11 @@ import shortcircuit from "../../assets/e-life icons/short-circuit-protection.png
 import staticicon from "../../assets/e-life icons/static-protection.png";
 import temperature from "../../assets/e-life icons/temperature-protection.png";
 import { Typography } from "@material-ui/core";
-import "./Home_Product.css";
+import "./OurProducts.css";
 import Button from "@mui/material/Button";
+import { Link } from "@mui/material";
 
-const Home_Product = () => {
+const OurProducts = () => {
   const features = [
     {
       name: "Over Charging Protection",
@@ -79,34 +81,35 @@ const Home_Product = () => {
           >
             E-ZESS
           </Typography>
-          <div class="ezess-row">
-            <div class="col-6">
-              <div class="list-sec">
+          <div className="ezess-row">
+            <div className="col-6">
+              <div className="list-sec">
                 <img src={speed} alt="speed" />
-                <h6 class="mb-0">45 Kmps*</h6>
+                <h6 className="mb-0">45 Kmps*</h6>
                 <p>Move it swift</p>
               </div>
             </div>
-            <div class="col-6">
-              <div class="list-sec">
+            <div className="col-6">
+              <div className="list-sec">
                 <img src={range} alt="range" />
-                <h6 class="mb-0">
+                <h6 className="mb-0">
                   <span>75-85 km*</span>
                 </h6>
                 <p>Goes a long way </p>
               </div>
             </div>
-            <div class="col-6">
-              <div class="list-sec">
+            <div className="col-6">
+              <div className="list-sec">
                 <img src={color} alt="color" />
-                <h6 class="mb-0">5 Colours </h6>
+                <h6 className="mb-0">5 Colours </h6>
+                <img src={colors} alt="colors" style={{ height: "1rem" }} />
               </div>
             </div>
-            <div class="col-6">
-              <div class="list-sec">
+            <div className="col-6">
+              <div className="list-sec">
                 {" "}
                 <img src={charging} alt="charging" />
-                <h6 class="mb-0">
+                <h6 className="mb-0">
                   <span>2-4 Hrs*</span>{" "}
                 </h6>
                 <p>Charging isn't tedious anymore </p>
@@ -142,34 +145,36 @@ const Home_Product = () => {
           >
             E-LIFE
           </Typography>
-          <div class="list">
+          <div className="list">
             {features.map((feature, i) => (
-              <div class="battery-sec" key={i}>
-                <img class="img" src={feature.icon} alt={i} />
-                <h6 class="feature-heading">{feature.name}</h6>
+              <div className="battery-sec" key={i}>
+                <img className="img" src={feature.icon} alt={i} />
+                <h6 className="feature-heading">{feature.name}</h6>
               </div>
             ))}
           </div>
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <Button
-          variant="contained"
-          size="medium"
-          align="center"
-          style={{
-            margin: 10,
-            padding: 10,
-            backgroundColor: "var(--primarygreen)",
-            color: "var(--darkblue)",
-            width: "150px",
-            borderRadius: 10,
-          }}
-        >
-          View More
-        </Button>
+        <Link href="/electric_vehicles" style={{ textDecoration: "none" }}>
+          <Button
+            variant="contained"
+            size="medium"
+            align="center"
+            style={{
+              margin: 10,
+              padding: 10,
+              backgroundColor: "var(--primarygreen)",
+              color: "var(--darkblue)",
+              width: "150px",
+              borderRadius: 10,
+            }}
+          >
+            View More
+          </Button>
+        </Link>
       </div>
     </div>
   );
 };
-export default Home_Product;
+export default OurProducts;
