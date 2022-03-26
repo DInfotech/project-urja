@@ -125,7 +125,9 @@ const ResponsiveAppBar = () => {
               }}
             >
               <NavDropdown.Item href="#">Announcements</NavDropdown.Item>
-              <NavDropdown.Item href="#">Right Issue</NavDropdown.Item>
+              <NavDropdown.Item href="/rightissue">
+                Right Issue
+              </NavDropdown.Item>
               <NavDropdown.Item href="#">
                 Notices of record date & BM
               </NavDropdown.Item>

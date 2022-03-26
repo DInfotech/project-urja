@@ -18,6 +18,8 @@ import Overview from "./components/company overview/Overview";
 import VisionMission from "./components/vision_&_mission/VisionMission";
 import KeyManagerial from "./components/key_managerial/KeyManagerial";
 import Franchisee from "./components/franchisee/franchisee";
+import Faq from "./components/FAQ/Faq";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   let routes = useRoutes([

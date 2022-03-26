@@ -1,0 +1,44 @@
+.icon img {
+  background: #58aa97;
+  padding: 10px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.counter-text {
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+
+.counter-text h3 {
+  font-weight: 600;
+  line-height: 1.2em;
+  font-size: 2.3rem;
+  color: white;
+  position: relative;
+  margin-top: 1.2rem;
+}
+
+.counter-text h3:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #58aa97;
+  top: -20px;
+  border-radius: 50%;
+  left: calc(50% - 6px);
+}
+
+.outer-wrap {
+  margin: 5px 0px;
+  background: var(--darkblue);
+  width: 25vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 40px 40px 10px 10px;
+}

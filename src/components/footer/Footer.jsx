@@ -40,12 +40,12 @@ export default function App() {
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <a href="/career" className="text-white">
                     Career
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <a href="/blog" className="text-white">
                     Blog
                   </a>
                 </li>
@@ -55,12 +55,12 @@ export default function App() {
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
-                    Privacy & Policy
+                  <a href="/privacy_policy" className="text-white">
+                    Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <a href="/refund_policy" className="text-white">
                     Refund Policy
                   </a>
                 </li>

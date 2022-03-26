@@ -1,0 +1,115 @@
+.hero-image {
+  background: var(--darkblue);
+  /* background-image: url(/project-urja/src/assets/blogging.png); */
+  border: 1px solid black;
+  padding: 4rem;
+}
+/* 
+.band {
+   
+   display: flex;
+   justify-content: space-between;
+
+    
+  }
+  
+  .card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 33%;
+
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+  }
+    .card:hover {
+      top: -2px;
+      box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    } 
+    
+    article {
+      padding: 20px;
+      flex: 1;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #333;
+    }
+    
+    p {
+      flex: 1;
+      line-height: 1.4;
+    }
+    
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin: 2em 0 0 0;
+    }
+    
+    .thumb {
+      background-size: cover;
+      background-position: center center;
+    }
+  
+   */
+
+.band {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.blog-card {
+  width: 30%;
+  margin: 1rem;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ 
+}
+
+.blog-card:hover{
+    top: -2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.article{
+    padding: 1.2rem;
+}
+.blog-img {
+  width: 100%;
+}
+
+.pd1{
+    padding-bottom: 1rem;
+}
+
+.article button{
+    padding: 3px 8px;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--primarygreen);
+    color: white;
+    margin-top: 1rem;
+ 
+}
+
+.title{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
