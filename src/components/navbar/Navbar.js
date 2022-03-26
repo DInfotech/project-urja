@@ -115,7 +115,7 @@ const ResponsiveAppBar = () => {
                 Products
               </Link>
             </Button>
-            <NavDropdown
+            <NavDropdown 
               title="INVESTORS"
               style={{
                 color: "var(--darkblue) !important",
