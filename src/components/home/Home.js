@@ -1,12 +1,12 @@
 import carousel1 from "../../assets/carousel/urja.jpeg";
-import carousel2 from "../../assets/carousel/E - LIFE.png";
-import carousel3 from "../../assets/carousel/WEB_1.jpg";
-import carousel4 from "../../assets/carousel/LEO_1.jpg";
-import carousel5 from "../../assets/carousel/go green_1.jpg";
+import carousel2 from "../../assets/carousel/WEB_1.jpg";
+import carousel3 from "../../assets/carousel/LEO_1.jpg";
 import Carousel from "react-material-ui-carousel";
-import About from "./Home_About";
-import Product from "./Home_Product";
-import Features from "./Home_Features";
+import booking from "../../assets/booking.png";
+import About from "./About";
+import Product from "./OurProducts";
+import Features from "./Features";
+import CompanyStats from "./CompanyStats";
 
 const Home = () => {
   function reveal() {
@@ -36,23 +36,15 @@ const Home = () => {
       name: "carousel3",
       src: carousel3,
     },
-    {
-      name: "carousel4",
-      src: carousel4,
-    },
-    {
-      name: "carousel5",
-      src: carousel5,
-    },
   ];
   return (
     <div>
       <Carousel sx={{ height: "600px", width: "100%" }}>
-        {items.map((item) => (
+        {items.map((item, i) => (
           <img
             src={item.src}
             alt={item.name}
-            key={item.name}
+            key={i}
             height="600px"
             width="100%"
           />
@@ -61,6 +53,14 @@ const Home = () => {
       <About />
       <Product />
       <Features />
+      <CompanyStats />
+      <img
+        src={booking}
+        alt="How to book your dream scooter"
+        width="100%"
+        style={{ marginTop: 10, backgroundColor: "#58aa97" }}
+        className="reveal"
+      />
     </div>
   );
 };
