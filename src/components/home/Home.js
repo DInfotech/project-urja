@@ -7,6 +7,7 @@ import About from "./About";
 import Product from "./OurProducts";
 import Features from "./Features";
 import CompanyStats from "./CompanyStats";
+import EnquiryForm from "./EnquiryForm";
 
 const Home = () => {
   function reveal() {
@@ -61,6 +62,7 @@ const Home = () => {
         style={{ marginTop: 10, backgroundColor: "#58aa97" }}
         className="reveal"
       />
+      <EnquiryForm />
     </div>
   );
 };

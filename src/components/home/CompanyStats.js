@@ -6,7 +6,7 @@ import { Typography } from "@material-ui/core";
 
 const CompanyStats = () => {
   return (
-    <div className="reveal">
+    <div className="reveal ">
       <Typography
         variant="h4"
         align="center"
