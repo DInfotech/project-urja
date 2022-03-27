@@ -42,14 +42,14 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
-  margin: 5px;
+  width: 25vw;
 }
 
 .ezess-row {
   display: flex;
   flex-wrap: wrap;
   width: 50vw;
-  padding: 20px;
+  padding: 10px;
 }
 
 .mb-0 {
@@ -67,7 +67,7 @@
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
-  width: 50vw;
+  width: 25vw;
   margin: 10px;
   justify-content: center;
 }

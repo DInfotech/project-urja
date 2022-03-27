@@ -10,7 +10,6 @@ import overcharging from "../../assets/e-life icons/over-charging-protection.png
 import overcurrent from "../../assets/e-life icons/over-current-protection.png";
 import overdischarge from "../../assets/e-life icons/over-discharge-protection.png";
 import shortcircuit from "../../assets/e-life icons/short-circuit-protection.png";
-import staticicon from "../../assets/e-life icons/static-protection.png";
 import temperature from "../../assets/e-life icons/temperature-protection.png";
 import { Typography } from "@material-ui/core";
 import "./OurProducts.css";
@@ -18,7 +17,7 @@ import Button from "@mui/material/Button";
 import { Link } from "@mui/material";
 
 const OurProducts = () => {
-  const features = [
+  const features1 = [
     {
       name: "Over Charging Protection",
       icon: overcharging,
@@ -31,6 +30,9 @@ const OurProducts = () => {
       name: "Over Discharge Protection",
       icon: overdischarge,
     },
+  ];
+
+  const features2 = [
     {
       name: "Short Circuit Protection",
       icon: shortcircuit,
@@ -40,14 +42,11 @@ const OurProducts = () => {
       icon: balance,
     },
     {
-      name: "Static Protection",
-      icon: staticicon,
-    },
-    {
       name: "Temperature Protection",
       icon: temperature,
     },
   ];
+
   return (
     <div className="reveal">
       <div style={{ display: "flex", justifyContent: "flex-end" }}>
@@ -124,14 +123,24 @@ const OurProducts = () => {
         <img
           src={ezess}
           alt="E-zess"
-          style={{ height: 400, width: "50vw", margin: 30, borderRadius: 20 }}
+          style={{
+            height: "45vh",
+            width: "50vw",
+            margin: 20,
+            borderRadius: 20,
+          }}
         />
       </div>
       <div style={{ display: "flex" }}>
         <img
           src={elife}
           alt="E-heaven"
-          style={{ height: 500, width: "50vw", margin: 30, borderRadius: 20 }}
+          style={{
+            height: "25vh",
+            width: "50vw",
+            margin: 30,
+            borderRadius: 20,
+          }}
         />
         <div>
           <Typography
@@ -149,13 +158,23 @@ const OurProducts = () => {
           >
             E-LIFE
           </Typography>
-          <div className="list">
-            {features.map((feature, i) => (
-              <div className="battery-sec" key={i}>
-                <img className="img" src={feature.icon} alt={i} />
-                <h6 className="feature-heading">{feature.name}</h6>
-              </div>
-            ))}
+          <div style={{ display: "flex" }}>
+            <div className="list">
+              {features1.map((feature, i) => (
+                <div className="battery-sec" key={i}>
+                  <img className="img" src={feature.icon} alt={i} />
+                  <h6 className="feature-heading">{feature.name}</h6>
+                </div>
+              ))}
+            </div>
+            <div className="list">
+              {features2.map((feature, i) => (
+                <div className="battery-sec" key={i}>
+                  <img className="img" src={feature.icon} alt={i} />
+                  <h6 className="feature-heading">{feature.name}</h6>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
