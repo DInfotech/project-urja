@@ -16,11 +16,7 @@ import Ceo from "./components/CEO/Ceo";
 import Overview from "./components/company overview/Overview";
 import VisionMission from "./components/vision_&_mission/VisionMission";
 import KeyManagerial from "./components/key_managerial/KeyManagerial";
-import RightIssue from "./components/Right Issue/RightIssue";
-
-import TermsConditions from "./components/Terms Conditions/TermsConditions";
 import Franchisee from "./components/franchisee/franchisee";
-import Faq from "./components/FAQ/Faq";
 import Blog from "./components/Blog/Blog";
 
 function App() {
@@ -78,12 +74,8 @@ function App() {
       element: <Franchisee />,
     },
     {
-      path: "/rightissue",
-      element: <RightIssue />,
-    },
-    {
-      path: "/terms&conditions",
-      element: <TermsConditions />,
+      path: "/blog",
+      element: <Blog />,
     },
   ]);
   return routes;

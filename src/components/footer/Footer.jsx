@@ -13,7 +13,7 @@ export default function App() {
     <MDBFooter className="text-center" color="white" bgColor="dark">
       <MDBContainer className="p-4">
         <section style={{ width: "100%" }}>
-          <MDBRow style={{ justifyContent: "space-evenly" }}>
+          <MDBRow>
             <MDBCol
               lg="3"
               md="6"
@@ -22,6 +22,7 @@ export default function App() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "flex-start",
+                width: "25%",
               }}
             >
               <h5 className="text-uppercase">Useful Links</h5>
@@ -76,6 +77,7 @@ export default function App() {
                 flexDirection: "column",
                 alignItems: "flex-start",
                 textAlign: "initial",
+                width: "33%",
               }}
             >
               <h5 className="text-uppercase">Corporate Address</h5>
@@ -125,6 +127,7 @@ export default function App() {
                 flexDirection: "column",
                 alignItems: "flex-start",
                 textAlign: "initial",
+                width: "33%",
               }}
             >
               <h5 className="text-uppercase">Factory Address</h5>

@@ -3,28 +3,33 @@ import feature1 from "../../assets/features/1.png";
 import feature2 from "../../assets/features/2.png";
 import feature3 from "../../assets/features/3.png";
 import feature4 from "../../assets/features/4.png";
+import booking from "../../assets/booking.png";
 
 const Features = () => {
   return (
     <div style={{ marginTop: 20 }} className="reveal">
-      <Typography
-        variant="h4"
-        align="center"
-        style={{
-          margin: 5,
-          padding: 10,
-          fontSize: 38,
-          color: "white",
-          backgroundColor: "#58aa97",
-          borderRadius: 12,
-        }}
-      >
-        Mighty Features
-      </Typography>
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <Typography
+          variant="h3"
+          align="center"
+          style={{
+            margin: 5,
+            padding: 10,
+            fontSize: 38,
+            color: "white",
+            backgroundColor: "#58aa97",
+            borderRadius: "0px 30px",
+            boxShadow: "grey 15px 15px 8px",
+            width: "50%",
+          }}
+        >
+          Mighty Features
+        </Typography>
+      </div>
       <div
         style={{
           display: "flex",
-          margin: 20,
+          margin: 10,
           padding: 20,
         }}
       >
@@ -49,6 +54,12 @@ const Features = () => {
           style={{ height: "30vh", width: "25vw" }}
         />
       </div>
+      <img
+        src={booking}
+        alt="How to book your dream scooter"
+        width="100%"
+        style={{ marginTop: 10, backgroundColor: "whitesmoke" }}
+      />
     </div>
   );
 };

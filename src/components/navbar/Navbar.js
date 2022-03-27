@@ -196,6 +196,25 @@ const ResponsiveAppBar = () => {
                 Contact Us
               </Link>
             </Button>
+            <Button
+              sx={{
+                margin: "1px",
+                color: "var(--darkblue)",
+                display: "block",
+              }}
+            >
+              <Link
+                href="/gallery"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--darkblue)",
+                  fontSize: "13px",
+                  fontWeight: 1000,
+                }}
+              >
+                Gallery
+              </Link>
+            </Button>
           </Box>
           <Box
             sx={{

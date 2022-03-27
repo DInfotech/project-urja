@@ -10,8 +10,6 @@
   align-items: center;
   overflow: hidden;
   margin: 10px;
-  height: 24rem;
-  width: 100%;
   background-color: var(--darkblue);
   color: #2b2b2b;
   text-align: center;
@@ -19,7 +17,17 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   vertical-align: top;
   border-radius: 2rem;
-  padding-left: 10px;
+  padding-left: 50px;
+}
+
+.card{
+  height: 24rem;
+  width: 100%;
+}
+
+.othercard{
+  height: 20rem;
+  width: 33%;
 }
 
 .franchiseecards h3 {
@@ -31,31 +39,17 @@
   color: var(--primarygreen);
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .sub {
   display: flex;
-}
-.subfranchiseecards {
-  padding: 17px;
-  background-color: white;
-  margin-bottom: 1.5rem;
-  border-radius: 10px;
-  color: black;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-right: 40px;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 
 .subfranchcards {
   width: 24rem;
   padding-left: 20px;
   background-color: white;
-  margin-bottom: 1.5rem;
   border-radius: 10px;
   color: black;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -63,9 +57,15 @@
   flex-wrap: wrap;
   justify-content:space-between ;
   padding-right: 20px;
-  margin-right: 200px;
-  margin-left: 450px;
-  height: 16rem;
+  margin-right: 50px;
+}
+
+.subcard{
+  height: 17rem;
+}
+
+.subothercards{
+  height: 13rem;
 }
 
 .subfranchcards h3 {
