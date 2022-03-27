@@ -49,7 +49,7 @@ const ElectricVehicles = () => {
           <Card
             sx={{
               width: "25vw",
-              height: "50vh",
+              height: "60vh",
               margin: "20px",
               borderRadius: 10,
               background: "var(--darkblue)",
@@ -57,7 +57,7 @@ const ElectricVehicles = () => {
             key={vehicle.name}
           >
             <img
-              height="50%"
+              height="60%"
               width="100%"
               src={vehicle.image}
               alt={vehicle.name}
