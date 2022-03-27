@@ -8,7 +8,6 @@ const Faq = () => {
   return (
     <>
       <section className="main-div">
-        <h5 className="center-item">FAQs</h5>
         <h1 className="common-heading">Frequently Asked Questions </h1>
         <div className="flex-horizontal">
           <div style={{ width: "50%" }}>

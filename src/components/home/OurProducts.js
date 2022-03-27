@@ -124,7 +124,7 @@ const OurProducts = () => {
           src={ezess}
           alt="E-zess"
           style={{
-            height: "45vh",
+            height: "40vh",
             width: "50vw",
             margin: 20,
             borderRadius: 20,
