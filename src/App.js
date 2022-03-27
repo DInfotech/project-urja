@@ -9,8 +9,7 @@ import AboutUs from "./components/about us/AboutUs";
 import ContactUs from "./components/contact us/ContactUs";
 import Footer from "./components/footer/Footer";
 import BusinessPartner from "./components/business partner/BusinessPartner";
-import CompanyOverview from "./components/company overview/Overview";
-import BoardDirectors from "./components/board directors/BoardDirectors"
+import BoardDirectors from "./components/board directors/BoardDirectors";
 import Products from "./components/Products/Products";
 import SolarProjects from "./components/Solar Projects/SolarProjects";
 import Ceo from "./components/CEO/Ceo";
@@ -18,7 +17,6 @@ import Overview from "./components/company overview/Overview";
 import VisionMission from "./components/vision_&_mission/VisionMission";
 import KeyManagerial from "./components/key_managerial/KeyManagerial";
 import Franchisee from "./components/franchisee/franchisee";
-import Faq from "./components/FAQ/Faq";
 import Blog from "./components/Blog/Blog";
 
 function App() {
@@ -70,6 +68,14 @@ function App() {
     {
       path: "/key_managerial",
       element: <KeyManagerial />,
+    },
+    {
+      path: "/franchisee",
+      element: <Franchisee />,
+    },
+    {
+      path: "/blog",
+      element: <Blog />,
     },
   ]);
   return routes;

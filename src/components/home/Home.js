@@ -7,6 +7,7 @@ import Product from "./OurProducts";
 import Features from "./Features";
 import CompanyStats from "./CompanyStats";
 import EnquiryForm from "./EnquiryForm";
+import Faq from "../FAQ/Faq";
 
 const Home = () => {
   function reveal() {
@@ -55,6 +56,7 @@ const Home = () => {
       <CompanyStats />
       <Features />
       <EnquiryForm />
+      <Faq />
     </div>
   );
 };
