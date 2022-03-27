@@ -66,11 +66,13 @@ const CardListItem = (props) => {
 const CardList = () => {
   return (
     <>
+      
       {cardDirectorsData.map((cardDirector) => {
         return (
           <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
         );
       })}
+     
     </>
   );
 };

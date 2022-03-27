@@ -8,11 +8,13 @@ import Details from '../common_components/Details';
 const KeyManagerial = () => {
   return (
     <>
-        <Banner banner_title={"Key Managerial Personnel"}/>
+        <Banner banner_title={"Top Managment"}/>
         
         <div className='max-width'>
-        <Details heading_title={" Key Managerial Personnel"}/>
+        <Details heading_title={" Top Managment"}/>
+        <div className='cards-flex'>
         <KeyManagerialContent/>
+    </div>
     </div>
     </>
   )
