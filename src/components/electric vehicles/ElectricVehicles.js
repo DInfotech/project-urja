@@ -1,7 +1,5 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Typography } from "@material-ui/core";
-import product1 from "../../assets/poster-2.jpg";
-import product2 from "../../assets/POSTER.jpg";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -11,35 +9,24 @@ import "../../common_styles/commonClasses.css";
 import Banner from "../common_components/banner/banner";
 
 const ElectricVehicles = () => {
-  const vehicles = [
-    {
-      img: product1,
-      name: "E-ZESS",
-    },
-    {
-      img: product2,
-      name: "E-HEAVEN",
-    },
-  ];
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
 
-  // const [error, setError] = useState(null);
-  // const [isLoaded, setIsLoaded] = useState(false);
-  // const [items, setItems] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("http://13.58.168.111:5544/api/61212df361090c6380388817/product")
-  //     .then((res) => res.json())
-  //     .then(
-  //       (result) => {
-  //         setIsLoaded(true);
-  //         setItems(result);
-  //       },
-  //       (error) => {
-  //         setIsLoaded(true);
-  //         setError(error);
-  //       }
-  //     );
-  // }, []);
+  useEffect(() => {
+    fetch("http://13.58.168.111:5544/api/61212df361090c6380388817/product")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setItems(result.data);
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      );
+  }, []);
 
   // if (error) {
   //   return <div>Error: {error.message}</div>;
@@ -58,21 +45,21 @@ const ElectricVehicles = () => {
           margin: 10,
         }}
       >
-        {vehicles.map((vehicle) => (
+        {items.map((vehicle) => (
           <Card
             sx={{
-              minWidth: 345,
-              height: 400,
+              width: "25vw",
+              height: "50vh",
               margin: "20px",
               borderRadius: 10,
+              background: "var(--darkblue)",
             }}
             key={vehicle.name}
           >
-            <CardMedia
-              component="img"
-              height="200"
+            <img
+              height="50%"
               width="100%"
-              image={vehicle.descriptionImage}
+              src={vehicle.image}
               alt={vehicle.name}
             />
             <CardContent>
@@ -81,7 +68,7 @@ const ElectricVehicles = () => {
                 variant="h4"
                 component="div"
                 align="center"
-                className="sub-heading"
+                style={{ color: "white" }}
               >
                 {vehicle.name}
               </Typography>
