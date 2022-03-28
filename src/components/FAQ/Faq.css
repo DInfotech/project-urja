@@ -24,6 +24,11 @@
   background: var(--darkblue);
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: ease .5s;
+}
+
+.main-heading:hover{
+  background-color: red;
 }
 
 .main-heading:first-child {
