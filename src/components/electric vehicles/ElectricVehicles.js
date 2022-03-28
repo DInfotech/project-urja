@@ -3,10 +3,10 @@ import { Typography } from "@material-ui/core";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import "../../common_styles/commonClasses.css";
 import Banner from "../common_components/banner/banner";
+import { Rating } from "@mui/material/";
 
 const ElectricVehicles = () => {
   const [error, setError] = useState(null);
@@ -48,21 +48,34 @@ const ElectricVehicles = () => {
         {items.map((vehicle) => (
           <Card
             sx={{
-              width: "25vw",
-              height: "60vh",
-              margin: "20px",
-              borderRadius: 10,
+              display: "flex",
+              margin: "30px 10px",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              width: "30%",
               background: "var(--darkblue)",
+              boxShadow: "lightgrey 10px 10px 50px",
+              borderRadius: "10px",
+              height: "90vh",
             }}
             key={vehicle.name}
           >
             <img
-              height="60%"
               width="100%"
+              height="40%"
               src={vehicle.image}
               alt={vehicle.name}
             />
-            <CardContent>
+            <CardContent
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "#0ea58a",
+                margin: 10,
+              }}
+            >
               <Typography
                 gutterBottom
                 variant="h4"
@@ -71,6 +84,18 @@ const ElectricVehicles = () => {
                 style={{ color: "white" }}
               >
                 {vehicle.name}
+              </Typography>
+              <Typography align="center" style={{ color: "white" }}>
+                {vehicle.description}
+              </Typography>
+              <Rating
+                name="rating"
+                value={vehicle.rating}
+                precision={0.5}
+                readOnly
+              />
+              <Typography align="center" style={{ color: "white" }}>
+                Price: ${vehicle.price}
               </Typography>
             </CardContent>
             <CardActions sx={{ justifyContent: "center" }}>
@@ -95,6 +120,5 @@ const ElectricVehicles = () => {
       </div>
     </>
   );
-  // }
 };
 export default ElectricVehicles;

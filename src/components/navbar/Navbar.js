@@ -104,7 +104,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               <Link
-                href="/products"
+                href="/categories"
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
