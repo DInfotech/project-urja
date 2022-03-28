@@ -49,7 +49,7 @@ const franchiseeda = [
     firmname: "Shri Shyam Motors",
     contact: "09681780739",
     email: "sarafpramod0@gmail.com",
-    address: "Gujrat",
+    address: "Gujarat",
   },
 ];
 
@@ -110,7 +110,7 @@ const FranchiseeContent = () => {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+      var elementVisible = 30;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -121,49 +121,61 @@ const FranchiseeContent = () => {
   window.addEventListener("scroll", reveal);
   return (
     <>
-      <div className='franchiseecards card reveal fade-bottom'>
+      <div className="franchiseecards card reveal fade-bottom">
         <h3>Rajasthan</h3>
-        <div className='sub reveal fade-left'>
+        <div className="sub reveal fade-left">
           {franchiseedata.map((cardDirector) => {
             return (
-              <SubCardListItem cardDirector={cardDirector} key={cardDirector.id} />
+              <SubCardListItem
+                cardDirector={cardDirector}
+                key={cardDirector.id}
+              />
             );
           })}
         </div>
       </div>
       <div className="sub">
-        <div className='franchiseecards othercard reveal fade-bottom'>
+        <div className="franchiseecards othercard reveal fade-bottom">
           <h3>Maharashtra</h3>
-          <div className='reveal fade-left'>
+          <div className="reveal fade-left">
             {franchiseedat.map((cardDirector) => {
               return (
-                <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                <CardListItem
+                  cardDirector={cardDirector}
+                  key={cardDirector.id}
+                />
               );
             })}
           </div>
         </div>
-        <div className='franchiseecards othercard reveal fade-bottom'>
+        <div className="franchiseecards othercard reveal fade-bottom">
           <h3>Gujarat</h3>
-          <div className='reveal fade-left'>
+          <div className="reveal fade-left">
             {franchiseeda.map((cardDirector) => {
               return (
-                <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                <CardListItem
+                  cardDirector={cardDirector}
+                  key={cardDirector.id}
+                />
               );
             })}
           </div>
         </div>
-        <div className='franchiseecards othercard reveal fade-bottom'>
+        <div className="franchiseecards othercard reveal fade-bottom">
           <h3>Ghaziabad</h3>
-          <div className='reveal fade-left'>
+          <div className="reveal fade-left">
             {franchiseed.map((cardDirector) => {
               return (
-                <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
+                <CardListItem
+                  cardDirector={cardDirector}
+                  key={cardDirector.id}
+                />
               );
             })}
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 export default FranchiseeContent;

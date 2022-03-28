@@ -18,8 +18,7 @@ import VisionMission from "./components/vision_&_mission/VisionMission";
 import KeyManagerial from "./components/key_managerial/KeyManagerial";
 import Franchisee from "./components/franchisee/franchisee";
 import Blog from "./components/Blog/Blog";
-import SingleProduct from "./components/Single Product/SingleProduct";
-
+// import SingleProduct from "./components/Single Product/SingleProduct";
 import Gallery from "./components/Gallery/Gallery";
 
 function App() {
@@ -93,7 +92,6 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
-      <SingleProduct/>
       <Footer />
     </Router>
   );
