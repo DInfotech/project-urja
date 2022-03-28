@@ -40,9 +40,9 @@ const ContactUsContent = () => {
         </div>
 
         <div>
-          <div className="secondary-heading" style={{ fontSize: "25px" }}>
+          {/* <div className="secondary-heading" style={{ fontSize: "25px" }}>
             Contact Us
-          </div>
+          </div> */}
           <div className="flex-horizontal contact-cards-parent">
             <div className="flex-vertical contact-child1">{ContactUsList}</div>
             <div
