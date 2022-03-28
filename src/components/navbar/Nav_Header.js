@@ -14,6 +14,8 @@ const styles = {
     backgroundColor: "white",
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
+    height: "4rem",
   },
   box: {
     width: 200,
@@ -36,7 +38,59 @@ const Nav_Header = () => {
 
   return (
     <div className={classes.header}>
-      <IconButton size="large" style={{ marginRight: 10 }}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <Typography
+          align="center"
+          fontWeight="bold"
+          style={{ color: "var(--darkblue)" }}
+        >
+          CIN: L67120DL1992PLC048983
+        </Typography>
+        {/* <Typography
+          align="center"
+          fontWeight="bold"
+          style={{ color: "var(--darkblue)", margin: 9 }}
+        >
+          GSTIN NO: 07AAACC0367M1ZN
+        </Typography> */}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          border: "1px solid grey",
+          borderRadius: 5,
+        }}
+      >
+        <Box
+          style={{
+            background: "var(--darkblue)",
+            color: "white",
+            fontWeight: "800",
+            width: 70,
+            height: 40,
+            fontSize: 20,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          NSE:
+        </Box>
+        <Box
+          style={{
+            fontWeight: "800",
+            width: 70,
+            height: 40,
+            fontSize: 20,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          ₹17.60
+        </Box>
+      </div>
+      <IconButton size="large">
         <Avatar
           alt="Urja Global"
           src={logo}
@@ -44,28 +98,47 @@ const Nav_Header = () => {
           sx={{ width: 56, height: 56 }}
         />
       </IconButton>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <Typography
-          align="center"
-          fontWeight="bold"
-          className="heading"
-          style={{ paddingTop: 20, marginTop: 5 }}
+      <div
+        style={{
+          display: "flex",
+          border: "1px solid grey",
+          borderRadius: 5,
+        }}
+      >
+        <Box
+          style={{
+            background: "var(--darkblue)",
+            color: "white",
+            fontWeight: "800",
+            width: 70,
+            height: 40,
+            fontSize: 20,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
-          CIN NO: L67120DL1992PLC048983
-        </Typography>
-        <Typography
-          align="center"
-          fontWeight="bold"
-          style={{ color: "var(--darkblue)", margin: 9 }}
+          BSE:
+        </Box>
+        <Box
+          style={{
+            fontWeight: "800",
+            width: 70,
+            height: 40,
+            fontSize: 20,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
-          GSTIN NO: 07AAACC0367M1ZN
-        </Typography>
+          ₹17.59
+        </Box>
       </div>
-      <div style={{ display: "flex", marginRight: "15px" }}>
+      <div style={{ display: "flex" }}>
         <Box className={classes.box}>
           <CallOutlinedIcon fontSize="large" />
           <div className={classes.text}>
-            <Typography fontWeight="light">Toll-Free:</Typography>
+            {/* <Typography fontWeight="light">Toll-Free:</Typography> */}
             <Typography fontWeight="bold" className="sub-heading">
               8000-500-789
             </Typography>
@@ -74,7 +147,7 @@ const Nav_Header = () => {
         <Box className={classes.box}>
           <EmailOutlinedIcon fontSize="large" />
           <div className={classes.text}>
-            <Typography fontWeight="light">Email:</Typography>
+            {/* <Typography fontWeight="light">Email:</Typography> */}
             <Typography fontWeight="bold" className="sub-heading">
               info@urjaglobal.in
             </Typography>

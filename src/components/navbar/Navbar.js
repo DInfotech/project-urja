@@ -13,8 +13,7 @@ import { NavDropdown } from "react-bootstrap";
 
 const styles = {
   navbar: {
-    backgroundColor: "var(--primarygreen)",
-    color: "var(--darkblue)",
+    backgroundColor: "#7eb5ff",
   },
 };
 const useStyles = makeStyles(styles);
@@ -35,6 +34,7 @@ const buttons = [
 ];
 
 const ResponsiveAppBar = () => {
+  // var pixelData = canvas.getContext('2d').getImageData(event.offsetX, event.offsetY, 1, 1).data;
   const classes = useStyles();
 
   return (
@@ -47,7 +47,7 @@ const ResponsiveAppBar = () => {
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
               alignItems: "baseline",
-              justifyContent: "space-evenly",
+              justifyContent: "flex-start",
             }}
           >
             <Button
@@ -62,7 +62,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "13.6px",
                   fontWeight: 1000,
                 }}
               >
@@ -74,7 +74,7 @@ const ResponsiveAppBar = () => {
               style={{
                 color: "var(--darkblue) !important",
                 fontWeight: 1000,
-                fontSize: "13px",
+                fontSize: "13.6px",
                 textDecoration: "none",
               }}
             >
@@ -108,7 +108,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "13.6px",
                   fontWeight: 1000,
                 }}
               >
@@ -120,7 +120,7 @@ const ResponsiveAppBar = () => {
               style={{
                 color: "var(--darkblue) !important",
                 fontWeight: 1000,
-                fontSize: "13px",
+                fontSize: "13.6px",
                 textDecoration: "none",
               }}
             >
@@ -151,7 +151,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "13.6px",
                   fontWeight: 1000,
                 }}
               >
@@ -170,7 +170,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "13.6px",
                   fontWeight: 1000,
                 }}
               >
@@ -189,7 +189,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "13.6px",
                   fontWeight: 1000,
                 }}
               >
@@ -208,7 +208,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13px",
+                  fontSize: "13.6px",
                   fontWeight: 1000,
                 }}
               >
@@ -220,7 +220,7 @@ const ResponsiveAppBar = () => {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              justifyContent: "space-evenly",
+              justifyContent: "flex-end",
             }}
           >
             {buttons.map((button) => (
@@ -240,7 +240,7 @@ const ResponsiveAppBar = () => {
                   style={{
                     textDecoration: "none",
                     color: "var(--darkblue)",
-                    fontSize: "13px",
+                    fontSize: "13.6px",
                   }}
                 >
                   {button.title}

@@ -20,6 +20,7 @@ import Franchisee from "./components/franchisee/franchisee";
 import Blog from "./components/Blog/Blog";
 import SingleProduct from "./components/Single Product/SingleProduct";
 
+import Gallery from "./components/Gallery/Gallery";
 
 function App() {
   let routes = useRoutes([
@@ -78,6 +79,10 @@ function App() {
     {
       path: "/blog",
       element: <Blog />,
+    },
+    {
+      path: "/gallery",
+      element: <Gallery />,
     },
   ]);
   return routes;
