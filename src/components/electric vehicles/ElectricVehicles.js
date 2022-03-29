@@ -49,6 +49,7 @@ const ElectricVehicles = () => {
           <Card
             sx={{
               display: "flex",
+              flexDirection: "column",
               margin: "30px 10px",
               flexWrap: "wrap",
               justifyContent: "center",
@@ -56,13 +57,13 @@ const ElectricVehicles = () => {
               background: "var(--darkblue)",
               boxShadow: "lightgrey 10px 10px 50px",
               borderRadius: "10px",
-              height: "90vh",
+              height: "80vh",
             }}
             key={vehicle.name}
           >
             <img
               width="100%"
-              height="40%"
+              height="50%"
               src={vehicle.image}
               alt={vehicle.name}
             />
@@ -74,6 +75,7 @@ const ElectricVehicles = () => {
                 justifyContent: "center",
                 color: "#0ea58a",
                 margin: 10,
+                height: "30%",
               }}
             >
               <Typography
@@ -81,11 +83,11 @@ const ElectricVehicles = () => {
                 variant="h4"
                 component="div"
                 align="center"
-                style={{ color: "white" }}
+                style={{ color: "white", width: "100%" }}
               >
                 {vehicle.name}
               </Typography>
-              <Typography align="center" style={{ color: "white" }}>
+              {/* <Typography align="center" style={{ color: "white" }}>
                 {vehicle.description}
               </Typography>
               <Rating
@@ -93,9 +95,9 @@ const ElectricVehicles = () => {
                 value={vehicle.rating}
                 precision={0.5}
                 readOnly
-              />
+              /> */}
               <Typography align="center" style={{ color: "white" }}>
-                Price: ${vehicle.price}
+                Price: ₹{vehicle.price}
               </Typography>
             </CardContent>
             <CardActions sx={{ justifyContent: "center" }}>
@@ -112,7 +114,7 @@ const ElectricVehicles = () => {
                   borderRadius: 10,
                 }}
               >
-                Know More
+                Buy Now
               </Button>
             </CardActions>
           </Card>

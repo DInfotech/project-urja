@@ -7,9 +7,7 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
-
 import "../../common_styles/commonClasses.css";
-import { borderRadius } from "@mui/system";
 
 const SingleProduct = () => {
   const [error, setError] = useState(null);
@@ -88,17 +86,17 @@ const SingleProduct = () => {
               >
                 {product.name}
               </Typography>
-              <Typography align="center" style={{ color: "white" }}>
+              {/* <Typography align="center" style={{ color: "white" }}>
                 {product.description}
-              </Typography>
-              <Rating
+              </Typography> */}
+              {/* <Rating
                 name="rating"
                 value={product.rating}
                 precision={0.5}
                 readOnly
-              />
+              /> */}
               <Typography align="center" style={{ color: "white" }}>
-                Price: ${product.price}
+                Price: ₹{product.price}
               </Typography>
             </CardContent>
             <CardActions sx={{ justifyContent: "center" }}>
@@ -115,7 +113,7 @@ const SingleProduct = () => {
                   borderRadius: 10,
                 }}
               >
-                Know More
+                Buy Now
               </Button>
             </CardActions>
           </Card>
