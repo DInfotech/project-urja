@@ -83,7 +83,15 @@ const ElectricVehicles = () => {
                 variant="h4"
                 component="div"
                 align="center"
-                style={{ color: "white", width: "100%" }}
+                style={{
+                  color: "white",
+                  width: "100%",
+                  height: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  textTransform: "uppercase",
+                }}
               >
                 {vehicle.name}
               </Typography>
@@ -96,9 +104,23 @@ const ElectricVehicles = () => {
                 precision={0.5}
                 readOnly
               /> */}
-              <Typography align="center" style={{ color: "white" }}>
-                Price: ₹{vehicle.price}
-              </Typography>
+              {vehicle.price > 10000 ? (
+                <Typography
+                  align="center"
+                  variant="h5"
+                  style={{ color: "white" }}
+                >
+                  Price: ₹{vehicle.price}
+                </Typography>
+              ) : (
+                <Typography
+                  align="center"
+                  variant="h5"
+                  style={{ color: "white" }}
+                >
+                  Booking Amount: ₹{vehicle.price}
+                </Typography>
+              )}
             </CardContent>
             <CardActions sx={{ justifyContent: "center" }}>
               <Button
