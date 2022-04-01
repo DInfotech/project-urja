@@ -20,6 +20,7 @@ import Franchisee from "./components/franchisee/franchisee";
 import Blog from "./components/Blog/Blog";
 import SingleProduct from "./components/Single Product/SingleProduct";
 import Gallery from "./components/Gallery/Gallery";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   let routes = useRoutes([
@@ -82,6 +83,10 @@ function App() {
     {
       path: "/gallery",
       element: <Gallery />,
+    },
+    {
+      path: "/cart",
+      element: <Cart />,
     },
     {
       path: "/products/:categoryID",

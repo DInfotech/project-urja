@@ -93,17 +93,19 @@ const ProductsContent = (props) => {
 
   return (
     <>
-      <div className="products_card">
-        <div className="flex-vertical products_card_top">
-          <img
-            src={props.cardProduct.image}
-            className="products_image"
-            alt="product"
-          ></img>
+      <Link to={`/products/${props.cardProduct.id}`}>
+        <div className="products_card">
+          <div className="flex-vertical products_card_top">
+            <img
+              src={props.cardProduct.image}
+              className="products_image"
+              alt="product"
+            ></img>
 
-          <div className="productl_card_heading">{props.cardProduct.name}</div>
-        </div>
-        <Link to={`/products/${props.cardProduct.id}`}>
+            <div className="productl_card_heading">
+              {props.cardProduct.name}
+            </div>
+          </div>
           <button
             onClick={() => {
               handleClick(props.cardProduct.id);
@@ -117,8 +119,8 @@ const ProductsContent = (props) => {
           >
             Explore
           </button>
-        </Link>
-      </div>
+        </div>
+      </Link>
     </>
   );
 };
