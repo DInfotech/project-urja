@@ -105,25 +105,11 @@ const CardListItem = (prop) => {
 };
 
 const FranchiseeContent = () => {
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 30;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
   return (
     <>
-      <div className="franchiseecards card reveal fade-bottom">
+      <div className="franchiseecards">
         <h3>Rajasthan</h3>
-        <div className="sub reveal fade-left">
+        <div className="sub fr">
           {franchiseedata.map((cardDirector) => {
             return (
               <SubCardListItem
@@ -135,9 +121,9 @@ const FranchiseeContent = () => {
         </div>
       </div>
       <div className="sub">
-        <div className="franchiseecards othercard reveal fade-bottom">
+        <div className="franchiseecards othercard">
           <h3>Maharashtra</h3>
-          <div className="reveal fade-left">
+          <div>
             {franchiseedat.map((cardDirector) => {
               return (
                 <CardListItem
@@ -148,9 +134,9 @@ const FranchiseeContent = () => {
             })}
           </div>
         </div>
-        <div className="franchiseecards othercard reveal fade-bottom">
+        <div className="franchiseecards othercard">
           <h3>Gujarat</h3>
-          <div className="reveal fade-left">
+          <div>
             {franchiseeda.map((cardDirector) => {
               return (
                 <CardListItem
@@ -161,9 +147,9 @@ const FranchiseeContent = () => {
             })}
           </div>
         </div>
-        <div className="franchiseecards othercard reveal fade-bottom">
+        <div className="franchiseecards othercard">
           <h3>Ghaziabad</h3>
-          <div className="reveal fade-left">
+          <div>
             {franchiseed.map((cardDirector) => {
               return (
                 <CardListItem

@@ -30,6 +30,10 @@
   width: 33%;
 }
 
+.fr{
+  height: 20rem;
+}
+
 .franchiseecards h3 {
   font-family: "Oswald";
   font-size: 30px;

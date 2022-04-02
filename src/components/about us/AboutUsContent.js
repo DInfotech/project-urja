@@ -1,20 +1,6 @@
 import React from 'react'
 import Details from '../common_components/Details';
 const AboutusContent = () => {
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
   const imagestyle = {
     width: "45%",
     borderRadius: "1rem",
@@ -29,7 +15,7 @@ const AboutusContent = () => {
         <div>
           <div className="mainsection">
             <div className="secondcontainer">
-              <div className="scon reveal fade-left">
+              <div className="scon">
                 <p className='paragraph-css'>
                   Our team comprises of seasoned professionals with a proven track
                   record in design and integration of off grid and grid connected
@@ -53,12 +39,12 @@ const AboutusContent = () => {
                   which makes use of green and clean energy simple viz.
                 </p>
               </div>
-              <img src='vision.jpg' alt='energy' style={imagestyle} className="reveal fade-right" />
+              <img src='vision.jpg' alt='energy' style={imagestyle}/>
             </div>
           </div>
           <div className="thirdcontainer">
-            <img src='vision.jpg' alt='energy' style={imagestyle} className="reveal fade-left"/>
-            <div className="reveal fade-right">
+            <img src='vision.jpg' alt='energy' style={imagestyle}/>
+            <div>
               <br />
               <p className='paragraph-css'>
                 Solar Home Lighting Systems, Solar Lanterns, Solar Street Lighting Systems, Roof Top Systems,
@@ -79,7 +65,7 @@ const AboutusContent = () => {
               </p>
             </div>
           </div>
-          <div className="scont reveal fade-bottom">
+          <div className="scont">
             <iframe
               width="800"
               height="400"
