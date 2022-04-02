@@ -21,7 +21,13 @@ const SingleProduct = () => {
     // alert(pathName[pathName.length - 1]);
     pathName = pathName[pathName.length - 1];
     // console.log(pathName);
-    fetch(`http://13.58.168.111:5544/api/${pathName}/product`)
+    fetch(`http://13.58.168.111:5544/api/${pathName}/product`, {
+      method: "GET",
+      headers: {
+        "access-control-allow-origin": "*",
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
       .then((res) => res.json())
       .then(
         (result) => {
