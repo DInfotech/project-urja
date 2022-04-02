@@ -20,6 +20,7 @@ import Franchisee from "./components/franchisee/franchisee";
 import Blog from "./components/Blog/Blog";
 import SingleProduct from "./components/Single Product/SingleProduct";
 import Gallery from "./components/Gallery/Gallery";
+
 import Cart from "./components/Cart/Cart";
 import TermsConditions from "./components/Terms Conditions/TermsConditions";
 import PrivacyPolicy from "./components/privacy policy/PrivacyPolicy";
@@ -120,6 +121,7 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
+   
       <Footer />
     </Router>
   );

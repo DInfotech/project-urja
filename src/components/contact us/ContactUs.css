@@ -1,5 +1,5 @@
 .contact-card-outline{
-    width: 35rem;
+    width: 33rem;
     height: auto;
     background-color: var(--darkblue);
     color: white;
@@ -28,6 +28,7 @@
     padding: 3rem;
     background-color: white;
     margin-top: 2rem;
+
     border-radius: 2rem;
     display: flex;
     gap: 1rem;
