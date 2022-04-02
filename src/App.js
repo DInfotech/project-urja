@@ -20,6 +20,8 @@ import Franchisee from "./components/franchisee/franchisee";
 import Blog from "./components/Blog/Blog";
 import SingleProduct from "./components/Single Product/SingleProduct";
 import Gallery from "./components/Gallery/Gallery";
+import ProductsCategory from "./components/Products Category/ProductsCategory";
+import SingleProductContent from "./components/Single Product/SingleProductContent";
 
 function App() {
   let routes = useRoutes([
@@ -96,6 +98,7 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
+   
       <Footer />
     </Router>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactUs.css";
 import ContactUsCards from "./ContactUsCards";
+import { ContactUsOfficeCards } from "./ContactUsCards";
 import { FiPhone } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
 
@@ -25,11 +26,32 @@ const ContactUsDatas = [
     mail_id2: "Email ID For Careers",
     mail_icon: <FiMail />,
   },
+
 ];
+
+
+const ContactUsOfficeDatas = [
+  {
+    id: 1,
+    heading1: "Urja Global Limited",
+    heading2:"Urja Incubation/Training Center",
+    heading3:"Factory Address",
+    location1:"487/63, 1st Floor, National Market, Peeragarhi, New Delhi-110087",
+    location2:"487/63, 1st Floor, National Market, Peeragarhi, New Delhi-87",
+    location3:"Plot No.11, Sec.16, HSIIDC, Industrial complex, Bahadurgarh, Distt. Jhajjar, Haryana – 124507, India",
+  },
+];
+
+
+
 
 const ContactUsContent = () => {
   const ContactUsList = ContactUsDatas.map((ContactUsData) => (
     <ContactUsCards ContactUsData={ContactUsData} />
+  ));
+
+  const ContactUsOfficeList = ContactUsOfficeDatas.map((ContactUsOfficeData) => (
+    <ContactUsOfficeCards ContactUsOfficeData={ContactUsOfficeData} />
   ));
   return (
     <div style={{ backgroundColor: "whitesmoke" }}>
@@ -46,9 +68,9 @@ const ContactUsContent = () => {
           <div className="flex-horizontal contact-cards-parent">
             <div className="flex-vertical contact-child1">{ContactUsList}</div>
             <div
-              className="contact-child1"
+              className="flex-vertical contact-child1"
               style={{ background: "var(primarygreen)" }}
-            ></div>
+            >{ContactUsOfficeList}</div>
           </div>
         </div>
       </div>

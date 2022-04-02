@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiMail } from "react-icons/fi";
-
+import {HiOutlineLocationMarker} from "react-icons/hi"
 
 
 const style = { color: "white", fontSize: "2rem" }
@@ -41,4 +41,52 @@ const ContactUsCards = ({ ContactUsData }) => {
   )
 }
 
+
+
+
+
+
+
+const ContactUsOfficeCards = ({ ContactUsOfficeData }) => {
+
+  return (
+    <div style={{ borderRadius: "1rem" }} >
+      <div className='contact-card-outline'>
+        <div className='head-title'>Registered Office</div>
+        <div className='padding-card' style={{padding:'2.5rem'}}>
+        
+          <div className='flex-horizontal-spacearound'>
+            <div className='align-item'><HiOutlineLocationMarker style={style} /></div>
+            <div className='flex-vertical' style={{ marginLeft: ".5rem" }}>
+              <div >{ContactUsOfficeData.heading1}</div>
+              <div>{ContactUsOfficeData.location1}</div>
+            </div>
+          </div>
+<hr/>
+          <div className='flex-horizontal-spacearound'>
+            <div className='align-item'><HiOutlineLocationMarker style={style} /></div>
+            <div className='flex-vertical' style={{ marginLeft: ".5rem" }}>
+              <div >{ContactUsOfficeData.heading2}</div>
+              <div>{ContactUsOfficeData.location2}</div>
+            </div>
+          </div>
+          <hr/>
+          <div className='flex-horizontal-spacearound'>
+            <div className='align-item'><HiOutlineLocationMarker style={style} /></div>
+            <div className='flex-vertical' style={{ marginLeft: ".5rem" }}>
+              <div >{ContactUsOfficeData.heading3}</div>
+              <div>{ContactUsOfficeData.location3}</div>
+            </div>
+          </div>
+         
+        </div>
+
+      </div>
+
+    </div>
+
+  )
+}
+
 export default ContactUsCards;
+export {ContactUsOfficeCards};
