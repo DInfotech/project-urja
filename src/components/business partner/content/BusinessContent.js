@@ -22,20 +22,6 @@ const CardListItem = (props) => {
   );
 };
 const BusinessContent = () => {
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
   const imagestyle = {
     width: "45%",
     borderRadius: "1rem",
@@ -45,26 +31,23 @@ const BusinessContent = () => {
   };
 
   return (
-    <div className="content reveal fade-bottom">
+    <div className="content">
       {cardDirectorsDa.map((cardDirector) => {
         return (
           <CardListItem cardDirector={cardDirector} key={cardDirector.id} />
         );
       })}
-      <div className="reveal fade-left">
+      <div>
         <div>
-          <div className="med-heading reveal fade-left">
+          <div className="med-heading">
             <h2>Core focus area:</h2>
           </div>
         </div>
         <div className="flex-img-cont">
           <img
-            src="vision.jpg"
-            alt="energy"
-            style={imagestyle}
-            className="reveal fade-left"
+            src="vision.jpg" alt="energy" style={imagestyle}
           />
-          <div className="reveal fade-right">
+          <div>
             <div className="secondary-heading">
               <h2>Solar Consultants</h2>
             </div>
