@@ -21,7 +21,10 @@ import Blog from "./components/Blog/Blog";
 import SingleProduct from "./components/Single Product/SingleProduct";
 import Gallery from "./components/Gallery/Gallery";
 import Cart from "./components/Cart/Cart";
-
+import TermsConditions from "./components/Terms Conditions/TermsConditions";
+import PrivacyPolicy from "./components/privacy policy/PrivacyPolicy";
+import RefundPolicy from "./components/refund policy/RefundPolicy";
+import Career from "./components/career/Career"
 function App() {
   let routes = useRoutes([
     {
@@ -89,6 +92,22 @@ function App() {
       element: <Cart />,
     },
     {
+      path: "/terms_and_conditions",
+      element: <TermsConditions />,
+    },
+    {
+      path: "/privacy_policy",
+      element: <PrivacyPolicy />,
+    },
+    {
+      path: "/refund_policy",
+      element: <RefundPolicy />,
+    },
+    {
+      path: "/career",
+      element: <Career />,
+    },
+    {
       path: "/products/:categoryID",
       element: <SingleProduct />,
     },
@@ -101,6 +120,7 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
+      <RefundPolicy />
       <Footer />
     </Router>
   );
