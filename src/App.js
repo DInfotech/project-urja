@@ -24,7 +24,7 @@ import Cart from "./components/Cart/Cart";
 import TermsConditions from "./components/Terms Conditions/TermsConditions";
 import PrivacyPolicy from "./components/privacy policy/PrivacyPolicy";
 import RefundPolicy from "./components/refund policy/RefundPolicy";
-import Career from "./components/career/Career"
+import Career from "./components/career/career"
 function App() {
   let routes = useRoutes([
     {
@@ -120,7 +120,6 @@ const AppWrapper = () => {
     <Router>
       <Navbar />
       <App />
-      <RefundPolicy />
       <Footer />
     </Router>
   );
