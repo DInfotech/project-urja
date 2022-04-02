@@ -10,6 +10,7 @@ import { Link } from "@material-ui/core";
 import "../../common_styles/commonClasses.css";
 import "./navbar.css";
 import { NavDropdown } from "react-bootstrap";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const styles = {
   navbar: {
@@ -62,7 +63,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13.6px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -74,7 +75,7 @@ const ResponsiveAppBar = () => {
               style={{
                 color: "var(--darkblue) !important",
                 fontWeight: 1000,
-                fontSize: "13.6px",
+                fontSize: "13px",
                 textDecoration: "none",
               }}
             >
@@ -108,7 +109,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13.6px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -120,7 +121,7 @@ const ResponsiveAppBar = () => {
               style={{
                 color: "var(--darkblue) !important",
                 fontWeight: 1000,
-                fontSize: "13.6px",
+                fontSize: "13px",
                 textDecoration: "none",
               }}
             >
@@ -151,7 +152,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13.6px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -170,7 +171,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13.6px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -189,7 +190,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13.6px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -208,7 +209,7 @@ const ResponsiveAppBar = () => {
                 style={{
                   textDecoration: "none",
                   color: "var(--darkblue)",
-                  fontSize: "13.6px",
+                  fontSize: "13px",
                   fontWeight: 1000,
                 }}
               >
@@ -240,7 +241,7 @@ const ResponsiveAppBar = () => {
                   style={{
                     textDecoration: "none",
                     color: "var(--darkblue)",
-                    fontSize: "13.6px",
+                    fontSize: "13px",
                   }}
                 >
                   {button.title}
@@ -248,6 +249,11 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
+          <Link href="/cart">
+            <Button sx={{ color: "var(--darkblue)" }}>
+              <ShoppingCartOutlinedIcon fontSize="large" />
+            </Button>
+          </Link>
         </Toolbar>
       </Container>
     </AppBar>

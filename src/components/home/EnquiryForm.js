@@ -12,20 +12,24 @@ import { Button } from "@material-ui/core";
 export default function EnquiryForm() {
   return (
     <div style={{ margin: "30px 0px" }} className="reveal">
-      <Typography
-        variant="h4"
-        align="center"
-        style={{
-          margin: 5,
-          padding: 10,
-          fontSize: 38,
-          color: "white",
-          backgroundColor: "#58aa97",
-          borderRadius: 12,
-        }}
-      >
-        Contact Form
-      </Typography>
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <Typography
+          variant="h3"
+          align="center"
+          style={{
+            margin: 5,
+            padding: 10,
+            fontSize: 38,
+            color: "white",
+            backgroundColor: "#58aa97",
+            borderRadius: "0px 30px",
+            boxShadow: "grey 15px 15px 8px",
+            width: "50%",
+          }}
+        >
+          Contact Us
+        </Typography>
+      </div>
       <div
         style={{
           display: "flex",

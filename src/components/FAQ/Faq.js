@@ -7,7 +7,7 @@ const Faq = () => {
   const [data] = useState(FaqData);
   return (
     <>
-      <section className="main-div">
+      <section className="main-div reveal">
         <h1 className="common-heading">Frequently Asked Questions </h1>
         <div className="flex-horizontal">
           <div style={{ width: "50%" }}>

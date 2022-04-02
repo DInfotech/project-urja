@@ -84,7 +84,7 @@
 //   },
 // ];
 
-// const ProductsContent = (props) => {
+const ProductsContent = (props) => {
  
 
 
@@ -110,6 +110,39 @@
 //     </>
 //   );
 // };
+  return (
+    <>
+      <Link to={`/products/${props.cardProduct.id}`}>
+        <div className="products_card">
+          <div className="flex-vertical products_card_top">
+            <img
+              src={props.cardProduct.image}
+              className="products_image"
+              alt="product"
+            ></img>
+
+            <div className="productl_card_heading">
+              {props.cardProduct.name}
+            </div>
+          </div>
+          <button
+            // onClick={() => {
+            //   handleClick(props.cardProduct.id);
+            //   console.log(selectedValue);
+            //   return (
+            //     <>
+            //       <SingleProduct />
+            //     </>
+            //   );
+            // }}
+          >
+            Explore
+          </button>
+        </div>
+      </Link>
+    </>
+  );
+};
 
 // const ProductsCardList = ({users}) => {
 //   return (
